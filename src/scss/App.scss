@@ -4,3 +4,35 @@
 //arrow left <i class="fa-solid fa-arrow-left"></i>
 //linkedin <i class="fa-brands fa-linkedin"></i>
 //git <i class="fa-brands fa-github"></i>
+
+body {
+  background-color: rgba(43, 79, 205, 1);
+  color: white;
+  font-family: 'Coming Soon', cursive;
+}
+
+//HEADER
+
+.header {
+  &__icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  &__titleContainer {
+    display: flex;
+    flex-direction: colunm;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__icons {
+    flex-direction: row;
+  }
+}

@@ -2,14 +2,15 @@ import React from 'react';
 
 function Header() {
   return (
-    <header>
-      <p>
+    <header className="header">
+      <div className="header__icons">
         <i className="fa-solid fa-arrow-left"></i>
-      </p>
-      <h1>My Gift List </h1>
-      <p>
-        <i className="fa-solid fa-arrow-left"></i>
-      </p>
+
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <div className="header__titleContainer">
+        <h1>My Gift List </h1>
+      </div>
     </header>
   );
 }

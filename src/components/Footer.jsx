@@ -2,15 +2,14 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div>
+    <footer className="footer">
       <p>Created by Nadine Estrella</p>
-      <p>
+      <div className="footer__icons">
         <i className="fa-brands fa-linkedin"></i>
-      </p>
-      <p>
+
         <i className="fa-brands fa-github"></i>
-      </p>
-    </div>
+      </div>
+    </footer>
   );
 }
 

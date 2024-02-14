@@ -5,6 +5,10 @@ import Footer from './Footer';
 import Header from './Header';
 import Login from './Login';
 import KidsWelcome from './KidsWelcome';
+import Categories from './Categories';
+import ListToy from './ListToy';
+import SelectedToys from './SelectedToys';
+import FinalList from './FinalList';
 
 function App() {
   return (
@@ -12,6 +16,10 @@ function App() {
       <Header />
       <Login />
       <KidsWelcome />
+      <Categories />
+      <ListToy />
+      <SelectedToys />
+      <FinalList />
 
       <Footer />
     </>
