@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function SelectedToys() {
   return (
@@ -15,6 +16,9 @@ function SelectedToys() {
         <li>toy </li>
         <li>toy </li>
       </ul>
+      <Link to="/FinalList">
+        <input type="submit" Next />
+      </Link>
     </div>
   );
 }

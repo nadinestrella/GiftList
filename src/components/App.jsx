@@ -15,35 +15,12 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Login
-              path="/Login"
-              element={
-                <KidsWelcome
-                  path="/KidsWelcome"
-                  element={
-                    <Categories
-                      path="Categories"
-                      element={
-                        <ListToy
-                          path="/ListToy"
-                          element={
-                            <SelectedToys
-                              path="/FinalList"
-                              element={<FinalList />}
-                            />
-                          }
-                        />
-                      }
-                    />
-                  }
-                />
-              }
-            />
-          }
-        />
+        <Route path="/" element={<Login />} />
+        <Route path="/KidsWelcome" element={<KidsWelcome />} />
+        <Route path="/Categories" element={<Categories />} />
+        <Route path="/ListToy" element={<ListToy />} />
+        <Route path="/SelectedToys" element={<SelectedToys />} />
+        <Route path="/FinalList" element={<FinalList />} />
       </Routes>
 
       <Footer />
@@ -53,5 +30,10 @@ function App() {
 
 export default App;
 
-{
-}
+//orden
+// 1login
+//2kidswelcome
+//3categories
+//4listtoy
+//5selectedtoys
+//6finallist
