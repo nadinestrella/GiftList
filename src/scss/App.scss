@@ -6,7 +6,10 @@
 //git <i class="fa-brands fa-github"></i>
 
 body {
-  background-color: rgba(43, 79, 205, 1);
+  //background-color: rgba(43, 79, 205, 1);
+  background-image: url('../images/background.jpg');
+  background-position: center center;
+
   color: white;
   font-family: 'Coming Soon', cursive;
 }
@@ -14,7 +17,7 @@ body {
 //HEADER
 
 .header {
-  &__icon {
+  &__icons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ListToy() {
   return (
@@ -10,7 +11,9 @@ function ListToy() {
       </div>
       <div>
         <p>Any match? Try again</p>
-        <input type="submit" />
+        <Link to="/SelectedToys">
+          <input type="submit" />
+        </Link>
       </div>
       <div>IMAGEN BOLSA</div>
     </div>

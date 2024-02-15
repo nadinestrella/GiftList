@@ -6,7 +6,7 @@ function Header() {
       <div className="header__icons">
         <i className="fa-solid fa-arrow-left"></i>
 
-        <i class="fa-solid fa-arrow-right"></i>
+        <i className="fa-solid fa-arrow-right"></i>
       </div>
       <div className="header__titleContainer">
         <h1>My Gift List </h1>

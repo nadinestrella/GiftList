@@ -14,12 +14,37 @@ function App() {
   return (
     <>
       <Header />
-      <Login />
-      <KidsWelcome />
-      <Categories />
-      <ListToy />
-      <SelectedToys />
-      <FinalList />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Login
+              path="/Login"
+              element={
+                <KidsWelcome
+                  path="/KidsWelcome"
+                  element={
+                    <Categories
+                      path="Categories"
+                      element={
+                        <ListToy
+                          path="/ListToy"
+                          element={
+                            <SelectedToys
+                              path="/FinalList"
+                              element={<FinalList />}
+                            />
+                          }
+                        />
+                      }
+                    />
+                  }
+                />
+              }
+            />
+          }
+        />
+      </Routes>
 
       <Footer />
     </>
@@ -29,9 +54,4 @@ function App() {
 export default App;
 
 {
-  /* <Routes>
-<Route>
-  <Login />
-</Route>
-</Routes> */
 }

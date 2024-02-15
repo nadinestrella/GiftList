@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Categories() {
   return (
@@ -17,6 +18,9 @@ function Categories() {
         <li>juego 1</li>
         <li>juego 2 </li>
       </ul>
+      <Link to="/listtoy">
+        <input type="submit" />
+      </Link>
     </div>
   );
 }
