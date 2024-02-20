@@ -4,19 +4,21 @@
 //arrow left <i class="fa-solid fa-arrow-left"></i>
 //linkedin <i class="fa-brands fa-linkedin"></i>
 //git <i class="fa-brands fa-github"></i>
+//bag <i class="fa-solid fa-bag-shopping"></i>
 
 body {
   //background-color: rgba(43, 79, 205, 1);
   background-image: url('../images/background.jpg');
   background-position: center center;
 
-  color: white;
+  color: black;
   font-family: 'Coming Soon', cursive;
 }
 
 //HEADER
 
 .header {
+  color: white;
   &__icons {
     display: flex;
     flex-direction: row;
@@ -27,15 +29,81 @@ body {
     flex-direction: colunm;
     justify-content: center;
     align-items: center;
+    &--log {
+      width: 100px;
+    }
   }
 }
 .footer {
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  bottom: 0;
 
   &__icons {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 10px;
   }
+  &__text {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+}
+.main {
+  height: 550px;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.5;
+  border-radius: 5px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    height: 550px;
+    width: 750px;
+  }
+}
+
+.generalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.login_title {
+}
+
+.inputNext {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: white;
+  border: 5px solid purple;
+  font-size: 2rem;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  border: 5px solid purple;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

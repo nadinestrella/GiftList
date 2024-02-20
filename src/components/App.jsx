@@ -9,19 +9,32 @@ import Categories from './Categories';
 import ListToy from './ListToy';
 import SelectedToys from './SelectedToys';
 import FinalList from './FinalList';
+import getDataFromApi from '../services/api';
+import { useEffect } from 'react';
+import Layout from './Layout';
 
 function App() {
+  useEffect(() => {
+    getDataFromApi().then((cleanData) => {
+      SelectedToys(cleanData);
+    });
+  }, []);
+
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/KidsWelcome" element={<KidsWelcome />} />
-        <Route path="/Categories" element={<Categories />} />
-        <Route path="/ListToy" element={<ListToy />} />
-        <Route path="/SelectedToys" element={<SelectedToys />} />
-        <Route path="/FinalList" element={<FinalList />} />
-      </Routes>
+      <main className="main">
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/kidswelcome" element={<KidsWelcome />} />
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/listtoy" element={<ListToy />} />
+            <Route path="/selectedtoys" element={<SelectedToys />} />
+            <Route path="/finallist" element={<FinalList />} />
+          </Routes>
+        </Layout>
+      </main>
 
       <Footer />
     </>

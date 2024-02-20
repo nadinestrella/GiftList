@@ -1,18 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function KidsWelcome() {
-  return (
-    <div>
-      <h1>Hello!!</h1>
-      <p>FULANITO</p>
+  const navigate = useNavigate();
 
-      <p>How old are you?</p>
-      <input type="text" />
-      <Link to="/Categories">
-        <input type="submit" />
-      </Link>
-    </div>
+  return (
+    <>
+      <div className="generalContainer">
+        <div>
+          <h3>Hello!!</h3>
+          <p>Liam</p>
+
+          <p>How old are you?</p>
+          <input type="text" placeholder=" 5" />
+        </div>
+
+        <div>
+          <Link to="/categories" className="next">
+            Next
+          </Link>
+          <button className="back" onClick={() => navigate(-1)}>
+            <i className="fa-solid fa-arrow-left"></i>
+          </button>
+        </div>
+      </div>
+    </>
   );
 }
 
