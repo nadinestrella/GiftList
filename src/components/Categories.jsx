@@ -15,12 +15,6 @@ function Categories() {
         <li>juego 2 </li>
         <li>juego 1</li>
       </ul>
-      <Link to="/listtoy">
-        <input type="submit" value="Next!" className="inputNext" />
-      </Link>
-      <div className="header__icons">
-        <i className="fa-solid fa-arrow-left"></i>
-      </div>
     </div>
   );
 }

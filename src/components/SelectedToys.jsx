@@ -16,12 +16,6 @@ function SelectedToys() {
         <li>toy </li>
         <li>toy </li>
       </ul>
-      <Link to="/finallist">
-        <input type="submit" value="Next!" className="inputNext" />
-      </Link>
-      <div className="header__icons">
-        <i className="fa-solid fa-arrow-left"></i>
-      </div>
     </div>
   );
 }

@@ -54,6 +54,8 @@ body {
   }
 }
 .main {
+  display: flex;
+  flex-direction: column;
   height: 550px;
   width: 300px;
   background-color: rgb(255, 255, 255);
@@ -88,22 +90,28 @@ body {
   font-size: 2rem;
 }
 
-.next {
+.actions {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-grow: 1;
-  width: 100px;
   height: 100px;
-  border-radius: 50%;
-  background-color: white;
-  border: 5px solid purple;
-  font-size: 2rem;
-  text-decoration: none;
-}
 
-.back {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__wrapper {
+    min-width: 50px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid purple;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }

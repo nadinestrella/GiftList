@@ -25,13 +25,6 @@ function ListToy() {
       <div>
         <i class="fa-solid fa-bag-shopping"></i>
       </div>
-
-      <Link to="/selectedtoys">
-        <input type="submit" value="Next!" className="inputNext" />
-      </Link>
-      <div className="header__icons">
-        <i className="fa-solid fa-arrow-left"></i>
-      </div>
     </div>
   );
 }
