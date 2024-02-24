@@ -17,6 +17,7 @@ function App() {
   const [parentName, setparentName] = useState('');
   const [parentEmail, setparentEmail] = useState('');
   const [kidName, setKidName] = useState('');
+  const [kidAge, setKidAge] = useState('');
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -27,6 +28,14 @@ function App() {
 
   const handleKidName = (value) => {
     setKidName(value);
+  };
+
+  const handleParentName = (value) => {
+    setparentName(value);
+  };
+
+  const handleParentEmail = (value) => {
+    setparentEmail(value);
   };
 
   return (
@@ -56,7 +65,10 @@ function App() {
               path="/selectedtoys"
               element={<SelectedToys kidName={kidName} />}
             />
-            <Route path="/finallist" element={<FinalList />} />
+            <Route
+              path="/finallist"
+              element={<FinalList kidName={kidName} kidAge={kidAge} />}
+            />
           </Routes>
         </Layout>
       </main>

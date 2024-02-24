@@ -1,11 +1,13 @@
 import React from 'react';
 
-function FinalList() {
+function FinalList({ kidName, kidAge }) {
   return (
     <div className="generalContainer">
       <div>
         <p>
-          Mum or Dad, copy this link to keep this information in a safe place{' '}
+          Mum or Dad, these are the {kidName} selection acording to their age:
+          {kidAge}
+          copy this link to keep this information in a safe place
         </p>
       </div>
       <div>
