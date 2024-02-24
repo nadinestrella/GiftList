@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__text">
-        <p>Created by Nadine Estrella</p>
+        <p>By Nadine Estrella</p>
       </div>
 
       <div className="footer__icons">

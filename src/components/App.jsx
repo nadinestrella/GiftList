@@ -10,15 +10,24 @@ import ListToy from './ListToy';
 import SelectedToys from './SelectedToys';
 import FinalList from './FinalList';
 import getDataFromApi from '../services/api';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Layout from './Layout';
 
 function App() {
+  const [parentName, setparentName] = useState('');
+  const [parentEmail, setparentEmail] = useState('');
+  const [kidName, setKidName] = useState('');
+  const [categories, setCategories] = useState([]);
+
   useEffect(() => {
     getDataFromApi().then((cleanData) => {
-      SelectedToys(cleanData);
+      setCategories(cleanData);
     });
   }, []);
+
+  const handleKidName = (value) => {
+    setKidName(value);
+  };
 
   return (
     <>
@@ -26,11 +35,27 @@ function App() {
       <main className="main">
         <Layout>
           <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path="/kidswelcome" element={<KidsWelcome />} />
-            <Route path="/categories" element={<Categories />} />
-            <Route path="/listtoy" element={<ListToy />} />
-            <Route path="/selectedtoys" element={<SelectedToys />} />
+            <Route
+              path="/"
+              element={
+                <Login kidName={kidName} handleKidName={handleKidName} />
+              }
+            />
+            <Route
+              path="/kidswelcome"
+              element={
+                <KidsWelcome kidName={kidName} handleKidName={handleKidName} />
+              }
+            />
+            <Route
+              path="/categories"
+              element={<Categories categories={categories} />}
+            />
+            <Route path="/listtoy" element={<ListToy kidName={kidName} />} />
+            <Route
+              path="/selectedtoys"
+              element={<SelectedToys kidName={kidName} />}
+            />
             <Route path="/finallist" element={<FinalList />} />
           </Routes>
         </Layout>

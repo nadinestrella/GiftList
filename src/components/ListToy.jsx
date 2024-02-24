@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function ListToy() {
+function ListToy({ kidName }) {
   return (
     <div className="generalContainer">
       <div>
-        <h3>Liam</h3>
+        <h3>{kidName}</h3>
         <p>This is what we found for you</p>
         <p>Add in the bag 5 toys that you like the most</p>
       </div>

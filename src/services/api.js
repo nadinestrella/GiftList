@@ -1,23 +1,19 @@
 const getDataFromApi = () => {
-  return fetch('https://hp-api.onrender.com/api/characters')
+  return fetch('https://fakestoreapi.com/products')
     .then((response) => response.json())
     .then((data) => {
-      const cleanData = data.map((character) => {
+      const cleanData = data.map((product) => {
         //IMAGES
-        let image = character.image;
+        let image = product.image;
         if (!image) {
-          image = `https://via.placeholder.com/210x295/ffffff/666666/?text=${character.name}`;
+          image = `https://via.placeholder.com/210x295/ffffff/666666/?text=${product.title}`;
         }
 
         return {
-          id: character.id,
-          name: character.name,
-          specie: specie,
-          status: alive,
-          gender: character.gender,
-          house: character.house,
-          photo: image,
-          alternativeNames: character.alternate_names,
+          id: product.id,
+          title: product.title,
+          category: product.category,
+          image: product.image,
         };
       });
       return cleanData;
