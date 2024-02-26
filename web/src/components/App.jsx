@@ -21,8 +21,8 @@ function App() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    getDataFromApi().then((cleanData) => {
-      setCategories(cleanData);
+    getDataFromApi().then((category) => {
+      setCategories(category);
     });
   }, []);
 
