@@ -7,12 +7,19 @@
 //bag <i class="fa-solid fa-bag-shopping"></i>
 
 body {
-  //background-color: rgba(43, 79, 205, 1);
-  background-image: url('../images/background.jpg');
+  background-color: rgba(43, 79, 205, 1);
+  // background-image: url('../images/background.jpg');
   background-position: center center;
 
-  color: black;
+  color: white;
   font-family: 'Coming Soon', cursive;
+}
+
+input {
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 5px;
+  font: inherit;
 }
 
 //HEADER
@@ -57,14 +64,16 @@ body {
   display: flex;
   flex-direction: column;
   height: 550px;
+  min-height: 550px;
   width: 300px;
   background-color: rgb(255, 255, 255);
-  opacity: 0.5;
+  color: black;
+  //opacity: 0.5;
   border-radius: 5px;
   margin: 0 auto;
 
   @media (min-width: 768px) {
-    height: 550px;
+    min-height: 550px;
     width: 750px;
   }
 }
@@ -75,6 +84,25 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+.toys {
+  padding: 5px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  &__image {
+    width: 100px;
+    height: auto;
+  }
+
+  &__title {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+  }
 }
 
 .login_title {
@@ -109,9 +137,25 @@ body {
     height: 50px;
     border-radius: 50%;
     background-color: white;
-    border: 5px solid purple;
+    border: 5px solid rgb(9, 181, 18);
     font-size: 2rem;
     text-decoration: none;
     cursor: pointer;
+  }
+}
+
+//categories
+
+.containerCategories {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  // gap: 20px;
+
+  &__li {
+    // width: 50px;
+    // height: 50px;
+    // border-radius: 50%;
+    // background-color: white;
   }
 }

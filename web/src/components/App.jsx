@@ -9,7 +9,7 @@ import Categories from './Categories';
 import ListToy from './ListToy';
 import SelectedToys from './SelectedToys';
 import FinalList from './FinalList';
-import getDataFromApi from '../services/api';
+import { getToysFromApi } from '../services/api';
 import { useEffect, useState } from 'react';
 import Layout from './Layout';
 
@@ -17,14 +17,22 @@ function App() {
   const [parentName, setparentName] = useState('');
   const [parentEmail, setparentEmail] = useState('');
   const [kidName, setKidName] = useState('');
-  const [kidAge, setKidAge] = useState('');
-  const [categories, setCategories] = useState([]);
+  const [toys, setToys] = useState([]);
 
+  // este estado nos sirve para filtrar en la api
+  const [filters, setFilters] = useState({ age: '', categories: [] });
+
+  //aqui me llegan los juguetes desde la api
   useEffect(() => {
-    getDataFromApi().then((category) => {
-      setCategories(category);
+    getToysFromApi().then((list) => {
+      setToys(list);
     });
   }, []);
+
+  // creamos un array con todas las categorias de los jugetes de la api
+  const categories = toys.map((toy) => toy.category);
+  // hacemos que sea una lista de categorias unicas
+  const uniqueCategories = [...new Set(categories)];
 
   const handleKidName = (value) => {
     setKidName(value);
@@ -36,6 +44,35 @@ function App() {
 
   const handleParentEmail = (value) => {
     setparentEmail(value);
+  };
+
+  const onCateoriesChange = (event) => {
+    // cogemos el valor del checkbox (category name)
+    const categoryClicked = event.target.value;
+    // cogemos si el checkbox esta checked (clickado)
+    const categoryClickedChecked = event.target.checked;
+
+    const currentCategories = filters.categories;
+
+    // si la categoria esta checked
+    if (categoryClickedChecked) {
+      // añadimos al array
+      currentCategories.push(categoryClicked);
+    } else {
+      // si no esta checked, buscamos el index de la categoria
+      const categoryClickedIndex = currentCategories.findIndex(
+        (category) => category === categoryClicked
+      );
+      // la eliminamos del array
+      currentCategories.splice(categoryClickedIndex, 1);
+    }
+
+    // actualizamos el estado
+    setFilters({ age: filters.age, categories: currentCategories });
+  };
+
+  const handleKidAge = (value) => {
+    setFilters({ age: value, categories: filters.categories });
   };
 
   return (
@@ -53,21 +90,37 @@ function App() {
             <Route
               path="/kidswelcome"
               element={
-                <KidsWelcome kidName={kidName} handleKidName={handleKidName} />
+                <KidsWelcome
+                  kidName={kidName}
+                  handleKidName={handleKidName}
+                  handleKidAge={handleKidAge}
+                  kidAge={filters.age}
+                />
               }
             />
             <Route
               path="/categories"
-              element={<Categories categories={categories} />}
+              element={
+                <Categories
+                  uniqueCategories={uniqueCategories}
+                  onCateoriesChange={onCateoriesChange}
+                  selectedCategories={filters.categories}
+                />
+              }
             />
-            <Route path="/listtoy" element={<ListToy kidName={kidName} />} />
+            <Route
+              path="/listtoy"
+              element={
+                <ListToy toys={toys} kidName={kidName} filters={filters} />
+              }
+            />
             <Route
               path="/selectedtoys"
               element={<SelectedToys kidName={kidName} />}
             />
             <Route
               path="/finallist"
-              element={<FinalList kidName={kidName} kidAge={kidAge} />}
+              element={<FinalList kidName={kidName} kidAge={filters.age} />}
             />
           </Routes>
         </Layout>

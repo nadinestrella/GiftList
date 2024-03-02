@@ -1,8 +1,12 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-function KidsWelcome({ kidName }) {
+function KidsWelcome({ kidName, handleKidAge, kidAge }) {
   const navigate = useNavigate();
+
+  const handleChange = (ev) => {
+    //coge el valor del input
+    handleKidAge(ev.target.value);
+  };
 
   return (
     <>
@@ -12,7 +16,14 @@ function KidsWelcome({ kidName }) {
           <p>{kidName}</p>
 
           <p>How old are you?</p>
-          <input type="text" placeholder=" 5" />
+          <input
+            minLength={1}
+            maxLength={2}
+            type="number"
+            placeholder="5"
+            value={kidAge}
+            onChange={handleChange}
+          />
         </div>
       </div>
     </>

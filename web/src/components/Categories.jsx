@@ -1,12 +1,30 @@
-function Categories({ categories }) {
-  const renderCategories = categories.map((product) => {
-    return <li key={product.id}>{product.category}</li>;
+function Categories({
+  uniqueCategories,
+  onCateoriesChange,
+  selectedCategories,
+}) {
+  const renderCategories = uniqueCategories.map((category) => {
+    return (
+      <li key={category} className="containerCategories__li">
+        <label htmlFor={category}>
+          <input
+            onChange={onCateoriesChange}
+            type="checkbox"
+            id={category}
+            value={category}
+            checked={selectedCategories.includes(category)}
+          />
+          {category}
+        </label>
+      </li>
+    );
   });
+
   return (
     <div className="generalContainer">
       <h3>What do you like to play with? </h3>
       <p>Choose as many plays as you like</p>
-      <ul></ul>
+      <ul className="containerCategories">{renderCategories}</ul>
     </div>
   );
 }

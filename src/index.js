@@ -34,13 +34,11 @@ async function getConnection() {
 
 //enpoints
 
-server.get('/categories', async (req, res) => {
+server.get('/toys', async (req, res) => {
   const conex = await getConnection();
-  const sql = 'SELECT DISTINCT category FROM toys';
-  const [results] = await conex.query(sql);
-  console.log(results);
-  // Mapear los resultados para obtener solo los valores de la columna 'category'
-  // const categories = results.map((result) => result.category);
+  const selectCategory = 'SELECT * FROM toys';
+  const [results] = await conex.query(selectCategory);
+  // console.log(results);
 
   conex.end();
   res.json({ success: true, data: results });

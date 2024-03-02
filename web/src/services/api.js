@@ -1,14 +1,19 @@
-const getDataFromApi = () => {
-  return fetch('https://localhost:5001/categories')
+export const getToysFromApi = () => {
+  return fetch('http://localhost:5001/toys')
     .then((response) => response.json())
     .then((data) => {
-      const categories = data.map((category) => {
+      const toys = data.data.map((toys) => {
         return {
-          category: data.category,
+          id: toys.id,
+          brand: toys.brand,
+          category: toys.category,
+          model: toys.model,
+          age: toys.age,
+          image: toys.image,
+          link: toys.link,
         };
       });
-      return categories;
+
+      return toys;
     });
 };
-
-export default getDataFromApi;
