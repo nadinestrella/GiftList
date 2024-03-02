@@ -151,11 +151,19 @@ function App() {
             />
             <Route
               path="/selectedtoys"
-              element={<SelectedToys kidName={kidName} />}
+              element={
+                <SelectedToys kidName={kidName} toysSelected={toysSelected} />
+              }
             />
             <Route
               path="/finallist"
-              element={<FinalList kidName={kidName} kidAge={filters.age} />}
+              element={
+                <FinalList
+                  kidName={kidName}
+                  kidAge={filters.age}
+                  toysSelected={toysSelected}
+                />
+              }
             />
           </Routes>
         </Layout>

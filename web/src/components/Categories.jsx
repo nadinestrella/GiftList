@@ -23,7 +23,7 @@ function Categories({
   return (
     <div className="generalContainer">
       <h3>What do you like to play with? </h3>
-      <p>Choose as many plays as you like</p>
+      <p>Choose as many options as you like</p>
       <ul className="containerCategories">{renderCategories}</ul>
     </div>
   );
