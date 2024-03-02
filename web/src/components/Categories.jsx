@@ -6,15 +6,19 @@ function Categories({
   const renderCategories = uniqueCategories.map((category) => {
     return (
       <li key={category} className="containerCategories__li">
-        <label htmlFor={category}>
-          <input
-            onChange={onCateoriesChange}
-            type="checkbox"
-            id={category}
-            value={category}
-            checked={selectedCategories.includes(category)}
+        <input
+          className="categories__input"
+          onChange={onCateoriesChange}
+          type="checkbox"
+          id={category}
+          value={category}
+          checked={selectedCategories.includes(category)}
+        />
+        <label className="categories__checkbox" htmlFor={category}>
+          <img
+            className="categories__checkbox__image"
+            src={`/categories/${category}.png`}
           />
-          {category}
         </label>
       </li>
     );

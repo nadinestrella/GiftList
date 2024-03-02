@@ -13,8 +13,8 @@ function ListToy({ kidName, toys, filters, toysSelected, onToysChange }) {
   return (
     <div className="generalContainer">
       <div>
-        <h3>{kidName}</h3>
-        <p>These are what we found for you</p>
+        <h3>{kidName},</h3>
+        <p>These are what we found for you!!</p>
         <p>Select the 3 toys you like the most. </p>
       </div>
       <div>
@@ -47,9 +47,12 @@ function ListToy({ kidName, toys, filters, toysSelected, onToysChange }) {
         </ul>
       </div>
       <div>
-        <p>
+        <p className="listToyAgain">
           Any match?{' '}
-          <button onClick={() => setToysList(getToysFilteredByCategAndAge())}>
+          <button
+            onClick={() => setToysList(getToysFilteredByCategAndAge())}
+            className="tryAgainBtn"
+          >
             Try again
           </button>
         </p>

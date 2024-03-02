@@ -3,12 +3,11 @@ import React from 'react';
 function FinalList({ kidName, kidAge, toysSelected }) {
   return (
     <div className="generalContainer">
-      <div>
-        <p>
-          Mum or Dad, these are the {kidName} selection acording to their age:
-          {kidAge}. Copy this link to keep this information in a safe place
-        </p>
-      </div>
+      <p className="finalList">
+        Mum or Dad, these are the {kidName} selection acording to their age:
+        {kidAge}. Copy these links to keep this information in a safe place.
+      </p>
+
       <ol>
         {toysSelected.map((toy, index) => {
           return (
@@ -22,13 +21,13 @@ function FinalList({ kidName, kidAge, toysSelected }) {
           );
         })}
       </ol>
-      <div>
+      <div className="finalListShare">
         <p>Share</p>
         <p>whatapp</p>
         <p>email</p>
         <p>sms</p>
       </div>
-      <div>Thank you for using The Gift List</div>
+      <div>Thank you for using The Gift List {''}❤️</div>
     </div>
   );
 }

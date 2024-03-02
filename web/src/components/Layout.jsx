@@ -20,7 +20,6 @@ export default function Layout({ children }) {
 
   return (
     <>
-      {children}
       <div className="actions">
         <div className="actions__wrapper">
           {currentStepIndex > 0 && currentStepIndex < steps.length ? (
@@ -45,6 +44,7 @@ export default function Layout({ children }) {
           ) : null}
         </div>
       </div>
+      {children}
     </>
   );
 }
