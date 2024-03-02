@@ -22,6 +22,10 @@ function App() {
   // este estado nos sirve para filtrar en la api
   const [filters, setFilters] = useState({ age: '', categories: [] });
 
+  //estado para juguetes seleccionados
+
+  const [toysSelected, setToysSelected] = useState([]);
+
   //aqui me llegan los juguetes desde la api
   useEffect(() => {
     getToysFromApi().then((list) => {
@@ -66,9 +70,34 @@ function App() {
       // la eliminamos del array
       currentCategories.splice(categoryClickedIndex, 1);
     }
-
     // actualizamos el estado
     setFilters({ age: filters.age, categories: currentCategories });
+  };
+
+  const onToysChange = (event) => {
+    // cogemos el valor del checkbox (category name)
+    const toyClicked = toys.find(
+      (toy) => toy.id === Number(event.target.value)
+    );
+    // cogemos si el checkbox esta checked (clickado)
+    const toyClickedChecked = event.target.checked;
+
+    const currentToys = [...toysSelected];
+
+    // si la categoria esta checked
+    if (toyClickedChecked) {
+      // añadimos al array
+      currentToys.push(toyClicked);
+    } else {
+      // si no esta checked, buscamos el index de la categoria
+      const toyClickedIndex = currentToys.findIndex(
+        (toy) => toy.id === toyClicked.id
+      );
+      // la eliminamos del array
+      currentToys.splice(toyClickedIndex, 1);
+    }
+
+    setToysSelected(currentToys);
   };
 
   const handleKidAge = (value) => {
@@ -111,7 +140,13 @@ function App() {
             <Route
               path="/listtoy"
               element={
-                <ListToy toys={toys} kidName={kidName} filters={filters} />
+                <ListToy
+                  toys={toys}
+                  kidName={kidName}
+                  filters={filters}
+                  toysSelected={toysSelected}
+                  onToysChange={onToysChange}
+                />
               }
             />
             <Route
