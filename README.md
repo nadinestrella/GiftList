@@ -24,15 +24,20 @@ Before you begin, ensure you have the latest version of [Node.js](https://nodejs
    git clone https://github.com/nadinestrella/GiftList.git
 
 2. Install NPM packages
+   ```sh
     npm install
 
-3. Run the application locally
-    npm run dev (frontend)
+3. Run the application locally (frontend)
+    ```sh
+    npm run dev 
 
 4. Open a new terminal 
+    ```sh
     cd web 
 
-5. npm run dev (backend)
+5. Run the application locally (backend)
+    ```sh
+    npm run dev 
 
 6. This command will start the app and open it in your default web browser. If it doesn't open automatically, you can visit http://localhost:5173/#/ manually.
 
