@@ -1,12 +1,13 @@
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2/promise');
+require('dotenv').config();
 
 //1 crear el servidor
 const server = express();
 server.use(cors());
 server.use(express.json({ limit: '25mb' }));
-const port = 5001;
+const port = 5001
 
 server.listen(port, () => {
   console.log(
