@@ -1,6 +1,11 @@
 name: GitHub Actions Demo
 run-name: Publish 🚀
 on: [push]
+
+env:
+  VITE_GIFTLIST_API_URL: ${{ vars.VITE_GIFTLIST_API_URL }}
+  APP_BASE: ${{ vars.APP_BASE }}
+
 jobs:
   gh-pages:
     runs-on: ubuntu-latest
