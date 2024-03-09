@@ -4,7 +4,7 @@ on: [push]
 
 env:
   VITE_GIFTLIST_API_URL: ${{ vars.VITE_GIFTLIST_API_URL }}
-  APP_BASE: ${{ vars.APP_BASE }}
+  VITE_APP_BASE: ${{ vars.VITE_APP_BASE }}
 
 jobs:
   gh-pages:

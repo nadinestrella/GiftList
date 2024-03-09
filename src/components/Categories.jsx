@@ -1,3 +1,5 @@
+import { getImageUrl } from "../utils/getImageUrl";
+
 function Categories({
   uniqueCategories,
   onCateoriesChange,
@@ -17,7 +19,7 @@ function Categories({
         <label className="categories__checkbox" htmlFor={category}>
           <img
             className="categories__checkbox__image"
-            src={`/categories/${category}.png`}
+            src={getImageUrl(`/categories/${category}.png`)}
           />
         </label>
       </li>

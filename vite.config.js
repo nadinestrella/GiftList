@@ -7,6 +7,6 @@ dotenv.config()
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.APP_BASE,
+  base: process.env.VITE_APP_BASE,
   plugins: [react()],
 })
