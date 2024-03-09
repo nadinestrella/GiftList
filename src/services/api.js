@@ -1,5 +1,5 @@
 export const getToysFromApi = () => {
-  return fetch('http://localhost:5001/toys')
+  return fetch(`${import.meta.env.VITE_GIFTLIST_API_URL}/toys`)
     .then((response) => response.json())
     .then((data) => {
       const toys = data.data.map((toys) => {
