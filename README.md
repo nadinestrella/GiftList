@@ -17,6 +17,8 @@ To get a local copy up and running, follow these simple steps.
 
 Before you begin, ensure you have the latest version of [Node.js](https://nodejs.org/) installed on your computer to run the project without any hitches.
 
+The GiftList API is [on this repo](https://github.com/nadinestrella/giftlist-api), make sure you have followed the steps to set it up locally.
+
 ### Installation 💻🖥️⌨️
 
 1. Clone the repo
@@ -31,15 +33,7 @@ Before you begin, ensure you have the latest version of [Node.js](https://nodejs
     ```sh
     npm run dev 
 
-4. Open a new terminal 
-    ```sh
-    cd web 
-
-5. Run the application locally (backend)
-    ```sh
-    npm run dev 
-
-6. This command will start the app and open it in your default web browser. If it doesn't open automatically, you can visit http://localhost:5173/#/ manually.
+4. This command will start the app and open it in your default web browser. If it doesn't open automatically, you can visit http://localhost:5173/#/ manually.
 
 ### Contributing 📩
 
