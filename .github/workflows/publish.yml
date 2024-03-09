@@ -4,6 +4,11 @@ on: [push]
 jobs:
   gh-pages:
     runs-on: ubuntu-latest
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      
+      id-token: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
