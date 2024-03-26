@@ -11,11 +11,12 @@ function KidsWelcome({ kidName, handleKidAge, kidAge }) {
   return (
     <>
       <div className="generalContainer">
-        <div>
-          <h3>Hello!!</h3>
-          <p>{kidName}</p>
-
-          <p>How old are you?</p>
+        <h3>Hello!!</h3>
+        <p>
+          <strong>{kidName}</strong>
+        </p>
+        <form className="login__form">
+          <label>How old are you?</label>
           <input
             minLength={1}
             maxLength={2}
@@ -23,8 +24,9 @@ function KidsWelcome({ kidName, handleKidAge, kidAge }) {
             placeholder="5"
             value={kidAge}
             onChange={handleChange}
+            required
           />
-        </div>
+        </form>
       </div>
     </>
   );

@@ -16,7 +16,7 @@ function Login({ kidName, handleKidName }) {
         <label htmlFor="email">Email</label>
         <input
           id="email"
-          type="text"
+          type="email"
           name="email"
           placeholder="nadine@gmail.com"
           required
@@ -32,6 +32,7 @@ function Login({ kidName, handleKidName }) {
             handleKidName(ev.target.value);
           }}
         />
+        <input type="reset" value="Clean" />
       </form>
     </div>
   );
