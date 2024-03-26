@@ -3,19 +3,36 @@ import React from 'react';
 function Login({ kidName, handleKidName }) {
   return (
     <div className="generalContainer">
-      <h3 className="login_title">Welcome to My Gift List</h3>
-      <p>What's your name?</p>
-      <input type="text" placeholder=" Nadine" />
-      <p>Email</p>
-      <input type="text" placeholder="nadine@gmail.com" />
-      <p>What's your son's name? </p>
-      <input
-        type="text"
-        placeholder=" Liam "
-        onChange={(ev) => {
-          handleKidName(ev.target.value);
-        }}
-      />
+      <h3>Welcome to My Gift List</h3>
+      <form className="login__form">
+        <label htmlFor="name">What's your name?</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Nadine"
+          required
+        />
+        <label htmlFor="email">Email</label>
+        <input
+          id="email"
+          type="text"
+          name="email"
+          placeholder="nadine@gmail.com"
+          required
+        />
+        <label htmlFor="kidName">What's your son's name? </label>
+        <input
+          id="idName"
+          type="text"
+          name="kidName"
+          placeholder=" Liam "
+          required
+          onChange={(ev) => {
+            handleKidName(ev.target.value);
+          }}
+        />
+      </form>
     </div>
   );
 }

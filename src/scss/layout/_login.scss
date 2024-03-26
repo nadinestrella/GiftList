@@ -1,0 +1,9 @@
+.login {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
