@@ -1,0 +1,17 @@
+.header {
+  color: white;
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  &__titleContainer {
+    display: flex;
+    flex-direction: colunm;
+    justify-content: center;
+    align-items: center;
+    &--log {
+      width: 100px;
+    }
+  }
+}

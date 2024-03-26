@@ -47,7 +47,7 @@ function ListToy({ kidName, toys, filters, toysSelected, onToysChange }) {
         </ul>
       </div>
       <div>
-        <p className="listToyAgain">
+        <p className="listTryAgain">
           Any match?{' '}
           <button
             onClick={() => setToysList(getToysFilteredByCategAndAge())}
