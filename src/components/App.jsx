@@ -11,12 +11,14 @@ import SelectedToys from './SelectedToys';
 import FinalList from './FinalList';
 import { getToysFromApi } from '../services/api';
 import { useEffect, useState } from 'react';
+import ls from '../services/localStorage';
 import Layout from './Layout';
+console.log(ls);
 
 function App() {
-  const [parentName, setparentName] = useState('');
-  const [parentEmail, setparentEmail] = useState('');
-  const [kidName, setKidName] = useState('');
+  const [parentName, setparentName] = useState(ls.get('parentName', ''));
+  const [parentEmail, setparentEmail] = useState(ls.get('parentEmail', ''));
+  const [kidName, setKidName] = useState(ls.get('kidName', ''));
   const [toys, setToys] = useState([]);
 
   // este estado nos sirve para filtrar en la api
@@ -32,6 +34,16 @@ function App() {
       setToys(list);
     });
   }, []);
+
+  useEffect(() => {
+    // Guardamos  en el local storage
+    ls.set('parentName', parentName);
+    ls.set('parentEmail', parentEmail);
+    ls.set('kidName', kidName);
+
+    // Este useEffect solo se ejecutará cuando cambie el nombre o el email
+    console.log('Ha cambiado el nombre o el email');
+  }, [parentName, parentEmail, kidName]);
 
   // creamos un array con todas las categorias de los jugetes de la api
   const categories = toys.map((toy) => toy.category);
