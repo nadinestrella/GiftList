@@ -6,4 +6,14 @@
     text-align: center;
     padding-top: 20px;
   }
+  &__cleanBtn {
+    width: 100px;
+    height: 26px;
+    background-color: $background3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+    font-size: 14px;
+  }
 }
