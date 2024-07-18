@@ -1,0 +1,381 @@
+[
+  {
+    "id": 1,
+    "brand": "LEGO",
+    "category": "lego",
+    "model": "Castillo Helado de Elsa",
+    "age": 3,
+    "price": 44.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI3MjkwfGltYWdlL2pwZWd8YUdRMUwyZ3laUzh4TXpZMU1UUXhORGswTVRjeU5nfGYxZDExZGM0MDBkZGFlYjBjNjNiZmY3MmI3MmVkYTU0NTUxOTM0NjMyNDlkZmUzMjZmYWRjMmNlMWJjZTUzOTU",
+    "link": "https://www.toysrus.es/LEGO-Disney-Frozen-Castillo-Helado-de-Elsa-43238/p/K1059828"
+  },
+  {
+    "id": 2,
+    "brand": "LEGO",
+    "category": "lego",
+    "model": "Super Mario - Aventuras con Luigi pack inicial",
+    "age": 5,
+    "price": 59.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDQ1MjQ5fGltYWdlL2pwZWd8YURrMkwyZ3dPUzh4TURrMU56ZzBOak14TlRBek9BfGRkODY0ZjVmYjhmMWZmODIxMmFjY2Q2NzVlYjNhZGMyZDJiNjJlYTU0OTc2NTljNWE5MzgwMmNmNDdhZWFkZDY",
+    "link": "https://www.toysrus.es/LEGO-Super-Mario-Aventuras-con-Luigi-pack-inicial-71387/p/K1028157"
+  },
+  {
+    "id": 3,
+    "brand": "LEGO",
+    "category": "lego",
+    "model": "Friends - Vehículo de plantación de árboles",
+    "age": 5,
+    "price": 29.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDQ4MjE0fGltYWdlL2pwZWd8YURSa0wyZzRPUzh4TVRrME1USXdOekF4TlRRMU5BfDMxNDU4NTQ1ZTdkNDg3MTlhYWE2YmUzYzA1NjdhMjNjZDVhZTk2MGJmYzQwMjU4YjFhNDcxN2I5OTI2YTg1MWQ",
+    "link": "https://www.toysrus.es/LEGO-Friends-Vehículo-de-plantación-de-árboles-41707/p/K1034773"
+  },
+  {
+    "id": 4,
+    "brand": "LEGO",
+    "category": "lego",
+    "model": "Juguete de construcción huerto orgánico con piezas apilables y frutas-vegetales",
+    "age": 1,
+    "price": 44.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDM4MjEzfGltYWdlL2pwZWd8YUdJMUwyZ3pZaTh4TWpjeE5USTNNRGN6TXpnMU5BfDU5MTBmNGRjNWFkYWMwYzQ3ZjBjZWU5YTQyM2I1ZTI5NjFkODMwOTg5N2VkZDJjZTZjNDZlNjczMzUwMzMwMjA",
+    "link": "https://www.toysrus.es/LEGO-Juguete-de-construcción-huerto-orgánico-con-piezas-apilables-y-frutas-vegetales%2C-10984/p/K1047505"
+  },
+  {
+    "id": 5,
+    "brand": "HOT WHEELS",
+    "category": "cars",
+    "model": "Hot Wheels Pista Acrobacias en Llamas con vehículo incluido",
+    "age": 8,
+    "price": 39.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDE2NTUyfGltYWdlL2pwZWd8YUdJMUwyaGhOUzh4TWpjeU1qUXpNREF4TnpVMk5nfGRkNDE5ZDRiNGYyMGYxMjQ4NTkyZjQ4ZmZjNmJlYTZkMzdmMDNkZTY1ZGUyYTMwMzAyNTM5MDU4ODg3MGM1YmQ",
+    "link": "https://www.toysrus.es/Hot-Wheels-Hot-Wheels-Pista-Acrobacias-en-Llamas-con-vehículo-incluido/p/K1047043"
+  },
+  {
+    "id": 6,
+    "brand": "HOT WHEELS",
+    "category": "cars",
+    "model": "Camión T-Rex definitivo y pista para coches de juguete con 2 vehículos incluidos",
+    "age": 3,
+    "price": 99.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI2MDU0fGltYWdlL2pwZWd8YUdWakwyZ3daaTh4TWpnM056STVPREV3TmpNNU9BfDNiYTlhYTk0MzM3MzYyNDMwYWY0ZDY1MjIyY2U1YTAyMDBhNGIxMjViODZmYTI2NjE4NTU1YzA4NmNmODZmNmE",
+    "link": "https://www.toysrus.es/Hot-Wheels-Cami%C3%B3n-T-Rex-definitivo-y-pista-para-coches-de-juguete-con-2-vehículos-incluidos-%E3%85%A4/p/K1054883"
+  },
+  {
+    "id": 7,
+    "brand": "HOT WHEELS",
+    "category": "cars",
+    "model": "Hot Wheels City - Mordisco del tiburón",
+    "age": 3,
+    "price": 69.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDMxMjI3fGltYWdlL2pwZWd8YURFekwyaGxaUzh4TWpJeE16a3dOakEwTnpBd05nfDBjMjlhOTE1MDdmNmJiMjM1ZDdiNjQ4OTRlOWZiYTIxYzZhYjI5Yjk2ZWIyZDI5MzdiNDMxNmIwOTdmNTc3NDY",
+    "link": "https://www.toysrus.es/Hot-Wheels-City-Mordisco-del-tiburón/p/K1040662"
+  },
+  {
+    "id": 8,
+    "brand": "HOT WHEELS",
+    "category": "cars",
+    "model": "Hot Wheels - Pack 10 Vehículos (varios modelos)",
+    "age": 3,
+    "price": 24.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDMyMTg3fGltYWdlL2pwZWd8YURFeEwyaGlPQzh4TVRZeU9EazJNalF4TkRZeU1nfGUzZGM2OGY0NGI1YWZjYWVmMjVkNTczMGQ5Nzc0MGI4ZWRmMzFhMzQyZTk1NzEwZDZiNmUyM2UwZDgwZDg0MzE"
+  },
+  {
+    "id": 9,
+    "brand": "CARS",
+    "category": "cars pixar",
+    "model": "Mini Racers (varios modelos)",
+    "age": 4,
+    "price": 3.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDUyMzQ0fGltYWdlL2pwZWd8YURrNEwyZ3dNQzh4TVRRM01URTRNalkxT1RZeE5BfDRjMGQ3YjQ3Mjg3Yzk1YmNjNWQ0ZGQwNzljOTgwN2M5ZmE5YmJmYTQwN2QwYzllMzU2ZjI0YjgxOGNmMjM5MDE",
+    "link": "https://www.toysrus.es/Cars-Mini-Racers-(varios-modelos)/p/K78045"
+  },
+  {
+    "id": 10,
+    "brand": "CARS",
+    "category": "cars pixar",
+    "model": "Vehículo juguete Monster Truck Acrobático",
+    "age": 3,
+    "price": 24.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI4OTM1fGltYWdlL2pwZWd8YURNd0wyZ3dNUzh4TXpnM09USTRNVGMwTlRrMU1BfDgxNzlhNDI5MThjYTRiYmQyZjU3NTVjY2ZmMzljZTRmNDA0OGU2MDBiNjY4NzNhNmE3MDE4ZTg1OTJjMmUxZWM",
+    "link": "https://www.toysrus.es/Mattel-Cars-Veh%C3%ADculo-juguete-Monster-Truck-Acrob%C3%A1tico-%E3%85%A4/p/K1060460"
+  },
+  {
+    "id": 11,
+    "brand": "CARS",
+    "category": "cars pixar",
+    "model": "Camión Mack transporte de coches",
+    "age": 3,
+    "price": 24.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDE5NTkwfGltYWdlL2pwZWd8YURReEwyZzNNeTh4TWpBeE9EQTFOelF4TWpZek9BfDk1ZWEwNWQ5ZWVhYmY4ZTllYTY3YzcwZTc4NTRmN2I2YTUyY2E2ZWJiNzY5NzhjMDM5ZDdjOTgzMzIyYjBkYzA",
+    "link": "https://www.toysrus.es/Cars-Cami%C3%B3n-Mack-transporte-de-coches/p/K1034667"
+  },
+  {
+    "id": 12,
+    "brand": "CARS",
+    "category": "cars pixar",
+    "model": "Coche de Cars 3 (varios modelos)",
+    "age": 3,
+    "price": 3.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDQzMjMwfGltYWdlL2pwZWd8YUdFMEwyZzJaUzg0T1RNNE56QXhNVGt6TWpRMnw4ZTVlYTFhMzQzMTEwYzQ5MDlhZDA3YzRjMWU4M2MxMjA4ZTcwZmM0MmFjZmM0N2M3ZTAyNGUzMjBiYzY3ZGQ2",
+    "link": "https://www.toysrus.es/Cars-Coche-de-Cars-3-(varios-modelos)/p/K206199"
+  },
+  {
+    "id": 13,
+    "brand": "NENUCO",
+    "category": "babies",
+    "model": "Pañal mágico",
+    "age": 3,
+    "price": 46.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI5NzU3fGltYWdlL2pwZWd8YUdVMUwyaGlOUzh4TWpFNU1qWTJOVE0zTURZMU5BfGNlY2Y2NTVmOWEwZDI0NTQzYmJmMDliYjg4ZTFhNzJkZWZkOWUyODcxZDc5MjJiMzVlNmYyMDVjNDJjODVhY2M",
+    "link": "https://www.toysrus.es/Nenuco-Pa%C3%B1al-m%C3%A1gico/p/K1041052"
+  },
+  {
+    "id": 14,
+    "brand": "NENUCO",
+    "category": "babies",
+    "model": "Muñeco Blandito 5 Funciones Rosa",
+    "age": 1,
+    "price": 18.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDMyNzY4fGltYWdlL2pwZWd8YURNNEwyaGtNUzg0T0RZeE9ETXdNVGcwT1Rrd3xiODg2OWRhYWYzODZkODQ3ODg3MjAyMzA4MWQ5MjRjOGY4MTUzZWQyMjQwZGRhMTljYjMwZWMxYTQ4ZGEyZGIz",
+    "link": "https://www.toysrus.es/Nenuco-Mu%C3%B1eco-Blandito-5-Funciones-Rosa/p/K170148"
+  },
+  {
+    "id": 15,
+    "brand": "NERF",
+    "category": "nerf",
+    "model": "Nerf Elite 2.0 - Warden DB-8",
+    "age": 8,
+    "price": 19.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDQ0MzQ1fGltYWdlL2pwZWd8YURFeEwyaGpPQzh4TURFeE9qVTROVFUxT1RVd01BfDJjY2FmNzA3N2YxYjFmN2ZlZTQxMDQ4YzJmZmMxMjU5ZmM3MjEyOTM1YzMwZmMxYjM3MzA0NjY4YjAyYzg",
+    "link": "https://www.toysrus.es/Nerf-Elite-2-0-Warden-DB-8/p/K1042264"
+  },
+  {
+    "id": 16,
+    "brand": "NERF",
+    "category": "nerf",
+    "model": "Nerf Elite 2.0 - Commander RD-6",
+    "age": 8,
+    "price": 12.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDIwNzI4fGltYWdlL2pwZWd8YURFeEwyaGpPQzh4TURFeE9qVTROVFUxT1RVd01BfDc4MmEwZTllY2E0YTM3MTU2Y2YwNWI3Mjg3YjU2NzRkYjYyYjQwMDE3M2UyOTMwZmZkY2U1NWRmNGFkMjU",
+    "link": "https://www.toysrus.es/Nerf-Elite-2-0-Commander-RD-6/p/K1042263"
+  },
+  {
+    "id": 17,
+    "brand": "NERF",
+    "category": "nerf",
+    "model": "Nerf Elite 2.0 - Turbine CS-18",
+    "age": 8,
+    "price": 39.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDU2NzQ4fGltYWdlL2pwZWd8YURFeEwyaGpPQzh4TURFeE9qVTROVFUxT1RVd01BfDQ1MWE4OTRjNjQ0ZmE2MmUyYzFiMDllYmEwYzYyYzQ1MzM4OTMyNzVhNmUwOTg4Y2FmMjFiOTY2YWIwNzA",
+    "link": "https://www.toysrus.es/Nerf-Elite-2-0-Turbine-CS-18/p/K1042265"
+  },
+  {
+    "id": 18,
+    "brand": "NERF",
+    "category": "nerf",
+    "model": "Nerf Ultra - Dorado",
+    "age": 8,
+    "price": 14.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI4NTEyfGltYWdlL2pwZWd8YURFeEwyaGpPQzh4TURFeE9qVTROVFUxT1RVd01BfDZkM2I1NTM1ZjFkMDZlMzAxNzJmZGQ2ZDA0NzI3NjRjZGUxMjBlNjIwM2UyNjBjY2JjOGU3ZDZjMTQ4ZWI",
+    "link": "https://www.toysrus.es/Barbie-Pediatra-Mu%C3%B1eca-Yo-Quiero-Ser/p/K1041431"
+  },
+  {
+    "id": 19,
+    "brand": "NERF",
+    "category": "nerf",
+    "model": "Nerf Fortnite - BASR-L",
+    "age": 8,
+    "price": 29.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDQ4Njg0fGltYWdlL2pwZWd8YURFeEwyaGpPQzh4TURFeE9qVTROVFUxT1RVd01BfGJmZWI2ZjBlMzJhN2Q5ZjRiYzM1NjY4NzI1Y2JhYjJjZjg2ZjM5N2E5M2FmZmJiM2JhZGMxYjI5ZmQ5ZDU",
+    "link": "https://www.toysrus.es/Nerf-Fortnite-BASR-L/p/K1042266"
+  },
+  {
+    "id": 20,
+    "brand": "NERF",
+    "category": "nerf",
+    "model": "Nerf Fortnite - SMG-E",
+    "age": 8,
+    "price": 29.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDY0MzYyfGltYWdlL2pwZWd8YURFeEwyaGpPQzh4TURFeE9qVTROVFUxT1RVd01BfGZiN2I3YjA1Y2Q1Yzg4ZGQxYjU4Yzk4NDQ1MjI3OTY5MjFhMzYwZDczN2E1ZTc3Zjk3ZWMxYjRkYzBmYWI5MmQ",
+    "link": "https://www.toysrus.es/Nerf-Fortnite-SMG-E/p/K1042267"
+  },
+  {
+    "id": 21,
+    "brand": "Barbie",
+    "category": "barbie",
+    "model": "Barbie Dreamtopia - Muñeca Sirena",
+    "age": 3,
+    "price": 12.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI1NTMzfGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGFlNDg4Njk2MTkzZDM4YTk5Y2ZjMjJjNjE5ZDRkMTk3N2Y5M2MwMjIxZTYxNjA0YjZlNTFjODI5ZmI5OTM",
+    "link": "https://www.toysrus.es/Barbie-Dreamtopia-Muñeca-Sirena/p/K1026990"
+  },
+  {
+    "id": 22,
+    "brand": "Barbie",
+    "category": "barbie",
+    "model": "Barbie - Casa Malibu",
+    "age": 3,
+    "price": 99.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI2NTQ2fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfDE4ZmI3NTQ4ZjUxMmQyOWY3MjM3N2QyOWQ4MmVhY2FmNDg3MTM1MjU0ZWIwM2RiOTM2NGFmMzA5NGYxZDI",
+    "link": "https://www.toysrus.es/Barbie-Casa-Malibu/p/K1034226"
+  },
+  {
+    "id": 23,
+    "brand": "Barbie",
+    "category": "barbie",
+    "model": "Barbie Extra - Muñeca Fashion",
+    "age": 3,
+    "price": 29.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDMwMzE5fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGEyYmVhMDYyYjFiMGMwZDM5YzY1YzBlZjJlZGZiNzg2YmVlZjZlZGM4MGRjNmRjYjJlZTQ4YjM5ZTJiYjA",
+    "link": "https://www.toysrus.es/Barbie-Extra-Muñeca-Fashion/p/K1033194"
+  },
+  {
+    "id": 24,
+    "brand": "Hot Wheels",
+    "category": "hotwheels",
+    "model": "Hot Wheels - Pista Mega Autopista",
+    "age": 5,
+    "price": 49.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDQ1ODAzfGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXlNRGt3TVRJMk5BfDI3YmVjMmNkMzFjZWE3NDE2NzNkZjBkNzY4ZjU2MjE2Y2E2NDM0ZmUxZDEyNmE2N2JmMmFjNjZjMjY4N2Y",
+    "link": "https://www.toysrus.es/Hot-Wheels-Pista-Mega-Autopista/p/K1026083"
+  },
+  {
+    "id": 25,
+    "brand": "Hot Wheels",
+    "category": "hotwheels",
+    "model": "Hot Wheels - Megagaraje City",
+    "age": 5,
+    "price": 69.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI2OTQ1fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXlNRGt3TVRJMk5BfGEwM2JmNmE1ZDlmNzQ1ZTczM2I3NmE5Y2I2MmQyNjA5YmRkZTIxN2YyZDQxZDc4NDY3NGJmOTg3Yzk5MjY",
+    "link": "https://www.toysrus.es/Hot-Wheels-Megagaraje-City/p/K1029451"
+  },
+  {
+    "id": 26,
+    "brand": "Hot Wheels",
+    "category": "hotwheels",
+    "model": "Hot Wheels - Camión Transportador de Coches",
+    "age": 5,
+    "price": 29.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDIyMjk3fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXlNRGt3TVRJMk5BfDg2ZjFiZWMxMWM4N2Q2MTFiZDc5NzJjY2FkYzI2YzE2ZjZlYWM5ZDk2NWM4ZGUyNzZmYzQ0NjBkNDIxMzg",
+    "link": "https://www.toysrus.es/Hot-Wheels-Camión-Transportador-de-Coches/p/K1029792"
+  },
+  {
+    "id": 27,
+    "brand": "LEGO",
+    "category": "lego",
+    "model": "LEGO Super Mario - Pack Inicial Aventuras con Mario",
+    "age": 6,
+    "price": 59.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDE4OTM5fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGUyYjI3MDU3NjFiY2M1OTliZDViMTg5OWMxZGJkYzJkYzYwZjE1ZGYxMTU1YzJhOWRkMzJjODc2MTU5ZDQ",
+    "link": "https://www.toysrus.es/LEGO-Super-Mario-Pack-Inicial-Aventuras-con-Mario/p/K1039193"
+  },
+  {
+    "id": 28,
+    "brand": "LEGO",
+    "category": "lego",
+    "model": "LEGO City - Centro de Control Móvil",
+    "age": 6,
+    "price": 39.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDMxNjM1fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfDg4Yzg2NDI5MjY2YmI3ZWM2ZTQ2N2YxY2MwYmFkOWYwMTExMTQ2ZmE3M2E3NGJhYjllNjkzZDFlZTIxMTc",
+    "link": "https://www.toysrus.es/LEGO-City-Centro-de-Control-Móvil/p/K1036455"
+  },
+  {
+    "id": 29,
+    "brand": "LEGO",
+    "category": "lego",
+    "model": "LEGO Technic - Dragster de Carreras",
+    "age": 7,
+    "price": 24.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDMwODk1fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfDdlYmMwMDkxNTQ2Njg4MzhhMDQyNzg3NTFkYjEwN2MxZGQ0M2U2MjlkZjhiZDI5YzExN2Y1NzViYzI3MGM",
+    "link": "https://www.toysrus.es/LEGO-Technic-Dragster-de-Carreras/p/K1036876"
+  },
+  {
+    "id": 30,
+    "brand": "LEGO",
+    "category": "lego",
+    "model": "LEGO Friends - Casa del Árbol de Mia",
+    "age": 6,
+    "price": 29.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI1MjE5fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGJmMTJhOTM4ZDk4OWZjYmVjYTY4YzE3MTI0N2Y5NDUwNzE3MjJmNTI3ZDc4ZjQxNmFhZjYyMTMyMzIxMjE",
+    "link": "https://www.toysrus.es/LEGO-Friends-Casa-del-Árbol-de-Mia/p/K1034443"
+  },
+  {
+    "id": 31,
+    "brand": "Playmobil",
+    "category": "playmobil",
+    "model": "Playmobil - Granja de Ponis",
+    "age": 4,
+    "price": 39.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI3MjI1fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGU4YTI4ZTQ2NTNiN2YwNzY2MmY0NjU0NzgxODQ0MzI1YjI1MTkxYmM2NzFhY2U5MzI2OTNlY2YxNmQ4ZjM2OTM",
+    "link": "https://www.toysrus.es/Playmobil-Granja-de-Ponis/p/K1032791"
+  },
+  {
+    "id": 32,
+    "brand": "Playmobil",
+    "category": "playmobil",
+    "model": "Playmobil - Campamento de Verano",
+    "age": 4,
+    "price": 49.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI4NjA5fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGEwM2QwMGE0YmZmZTU4ODViNmU3ZjI4NzAyOTUwNzU2YjQ0OWY2ZjZkZmMwN2MxZGM0N2E0YWM2NWE3M2U",
+    "link": "https://www.toysrus.es/Playmobil-Campamento-de-Verano/p/K1033934"
+  },
+  {
+    "id": 33,
+    "brand": "Playmobil",
+    "category": "playmobil",
+    "model": "Playmobil - Parque de Atracciones",
+    "age": 4,
+    "price": 89.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI4NDY3fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGI3MzE0ZTg0Zjg0YjM5YjJiNjA5MzMxZjI1MzExMDYxYjFhMDk2NzI5NDMwMzM0ZjYxY2FmN2QxYzU3Y2U",
+    "link": "https://www.toysrus.es/Playmobil-Parque-de-Atracciones/p/K1034482"
+  },
+  {
+    "id": 34,
+    "brand": "Nerf",
+    "category": "nerf",
+    "model": "Nerf - Elite Disruptor",
+    "age": 8,
+    "price": 19.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDEwNDA1fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGUxM2IyNDc5MmFmNDQ1ZDA3N2Y1NzllNjFhZDg0Mzg1YWM5ZjQ1NTY4MWM3NWI0MjNhNTc1MzY2NjRkODg",
+    "link": "https://www.toysrus.es/Nerf-Elite-Disruptor/p/K1021416"
+  },
+  {
+    "id": 35,
+    "brand": "Nerf",
+    "category": "nerf",
+    "model": "Nerf - Ultra Dorado",
+    "age": 8,
+    "price": 29.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDMxNTc0fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGE0NzViZDBkZGZlODc3MTNjMTliNzQxNWEwNTE2ZjA0ODJkZTMwZDc0NGIyMmY4YzUxM2Q1MzU0Y2UxYTM",
+    "link": "https://www.toysrus.es/Nerf-Ultra-Dorado/p/K1035743"
+  },
+  {
+    "id": 36,
+    "brand": "Nerf",
+    "category": "nerf",
+    "model": "Nerf - Fortnite AR-L",
+    "age": 8,
+    "price": 49.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI2NjQ4fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGE3MjBiYTY2M2U1MzU1ZTVmMDQ0YTM5NGM1MjMyY2M4M2FjOTMxZDM4Y2JjOWFkZTExNmM3ZTEwNDJhZTc",
+    "link": "https://www.toysrus.es/Nerf-Fortnite-AR-L/p/K1031104"
+  },
+  {
+    "id": 37,
+    "brand": "Funko Pop!",
+    "category": "funko",
+    "model": "Funko Pop! - Figura Bob Esponja",
+    "age": 3,
+    "price": 12.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI0Njk5fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGE4YjExZGM1ZDAwYWM3ZDU0MzNmZTJiYmI5MzIxZmYxYThmY2JjNjI5NjM0M2M1NjRmYmE0NjU5ZjRlM2Q",
+    "link": "https://www.toysrus.es/Funko-Pop-Figura-Bob-Esponja/p/K1033816"
+  },
+  {
+    "id": 38,
+    "brand": "Funko Pop!",
+    "category": "funko",
+    "model": "Funko Pop! - Figura Harry Potter",
+    "age": 3,
+    "price": 14.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI2MDg0fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGU4Y2VjNWM2YzE4NWI5NDJmNjM3ZjU2ODlhMmJmY2MxY2M2MTg5MzE2NmIyM2JkY2U5M2M1MTI1NTc0NjU",
+    "link": "https://www.toysrus.es/Funko-Pop-Figura-Harry-Potter/p/K1033501"
+  }
+]
