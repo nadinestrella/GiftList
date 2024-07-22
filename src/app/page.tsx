@@ -1,13 +1,18 @@
 'use client';
 import { useState } from 'react';
 
-import { Login } from './components/Login';
 import { Toy, Filters } from '@/types/toy';
+import { Login } from './components/Login';
 import { KidsWelcome } from './components/KidsWelcome';
 import { Categories } from './components/Categories';
 import { ListToy } from './components/ListToy';
 import { SelectedToys } from './components/SelectedToys';
 import { FinalList } from './components/FinalList';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import Slider from 'react-slick';
 
 export default function Home() {
   const [parentName, setparentName] = useState<string>('');
@@ -99,9 +104,67 @@ export default function Home() {
   const handleKidAge = (value: string) => {
     setFilters({ age: value, categories: filters.categories });
   };
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Login kidName={kidName} handleKidName={handleKidName} />
+    <Slider className="m-8" {...settings}>
+      <div>
+        <Login kidName={kidName} handleKidName={handleKidName} />
+      </div>
+      <div>
+        <KidsWelcome
+          kidName={kidName}
+          handleKidName={handleKidName}
+          handleKidAge={handleKidAge}
+          kidAge={filters.age}
+        />
+      </div>
+      <div>
+        <Categories
+          uniqueCategories={uniqueCategories}
+          onCateoriesChange={onCateoriesChange}
+          selectedCategories={filters.categories}
+        />
+      </div>
+      <div>
+        <ListToy
+          toys={toys}
+          kidName={kidName}
+          filters={filters}
+          toysSelected={toysSelected}
+          onToysChange={onToysChange}
+        />
+      </div>
+      <div>
+        <SelectedToys kidName={kidName} toysSelected={toysSelected} />
+      </div>
+      <div>
+        <FinalList
+          kidName={kidName}
+          kidAge={filters.age}
+          toysSelected={toysSelected}
+        />
+      </div>
+    </Slider>
+  );
+}
+
+//orden
+// 1login
+//2kidswelcome
+//3categories
+//4listtoy
+//5selectedtoys
+//6finallist
+
+{
+  /* <Login kidName={kidName} handleKidName={handleKidName} />
 
       <KidsWelcome
         kidName={kidName}
@@ -130,15 +193,5 @@ export default function Home() {
         kidName={kidName}
         kidAge={filters.age}
         toysSelected={toysSelected}
-      />
-    </main>
-  );
+      /> */
 }
-
-//orden
-// 1login
-//2kidswelcome
-//3categories
-//4listtoy
-//5selectedtoys
-//6finallist
