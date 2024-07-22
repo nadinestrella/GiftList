@@ -1,21 +1,23 @@
 import React from 'react';
+import Image from 'next/image';
 
 export const SelectedToys = ({ kidName, toysSelected }) => {
   return (
     <div className="generalContainer">
       <div>
         <p>{kidName} </p>
-        <p> You've choosen these {toysSelected.length} toys!!</p>
+        <p> You have choosen these {toysSelected.length} toys!!</p>
       </div>
       <ul>
         {toysSelected.map((toy, index) => {
           return (
             <li key={index}>
-              <img
+              <Image
                 className="toys__image"
                 src={toy.image}
                 width={80}
                 height={80}
+                alt="toy selected"
               />
               <strong className="toys__title">
                 {toy.model.length > 15

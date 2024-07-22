@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export const ListToy = ({
   kidName,
@@ -35,11 +36,12 @@ export const ListToy = ({
                     onChange={onToysChange}
                     checked={toysSelected.map((toy) => toy.id).includes(toy.id)}
                   />
-                  <img
+                  <Image
                     className="toys__image"
                     src={toy.image}
                     width={80}
                     height={80}
+                    alt="list toys"
                   />
                   <strong className="toys__title">
                     {toy.model.length > 15

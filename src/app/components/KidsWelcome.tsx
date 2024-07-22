@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const KidsWelcome = ({ kidName, handleKidAge, kidAge }) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleChange = (ev) => {
     //coge el valor del input

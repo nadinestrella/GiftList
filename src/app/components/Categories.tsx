@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Image from 'next/image';
+
 export const Categories = ({
   uniqueCategories,
   onCateoriesChange,
@@ -17,9 +19,10 @@ export const Categories = ({
           checked={selectedCategories.includes(category)}
         />
         <label className="categories__checkbox" htmlFor={category}>
-          <img
+          <Image
             className="categories__checkbox__image"
             src={getImageUrl(`/categories/${category}.png`)}
+            alt="categories"
           />
         </label>
       </li>
