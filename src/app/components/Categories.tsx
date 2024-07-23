@@ -29,10 +29,10 @@ export const Categories = ({
     );
   });
   return (
-    <div className="generalContainer">
+    <div className="flex flex-col justify-center items-center content-center gap-4">
       <h3>What do you like to play with? </h3>
       <p>Choose as many options as you like</p>
-      <ul className="containerCategories">{renderCategories}</ul>
+      <ul className="grid grid-cols-2 gap-10">{renderCategories}</ul>
     </div>
   );
 };

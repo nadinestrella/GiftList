@@ -18,14 +18,14 @@ export const ListToy = ({
 
   const [toysList, setToysList] = useState(getToysFilteredByCategAndAge());
   return (
-    <div className="generalContainer">
+    <div className="flex flex-col justify-center items-center content-center gap-4">
       <div>
         <h3>{kidName},</h3>
         <p>These are what we found for you!!</p>
         <p>Select the 3 toys you like the most. </p>
       </div>
       <div>
-        <ul className="toys">
+        <ul className="p-1 grid grid-cols-2 gap-2 md:grid-cols-3">
           {toysList.map((toy, index) => {
             return (
               <li key={index}>
@@ -37,13 +37,13 @@ export const ListToy = ({
                     checked={toysSelected.map((toy) => toy.id).includes(toy.id)}
                   />
                   <Image
-                    className="toys__image"
+                    className="w-24 h-auto md:h-32"
                     src={toy.image}
                     width={80}
                     height={80}
                     alt="list toys"
                   />
-                  <strong className="toys__title">
+                  <strong className="block text-sm font-bold">
                     {toy.model.length > 15
                       ? toy.model.slice(0, 15) + '...'
                       : toy.model}

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const SelectedToys = ({ kidName, toysSelected }) => {
   return (
-    <div className="generalContainer">
+    <div className="flex flex-col justify-center items-center content-center gap-4">
       <div>
         <p>{kidName} </p>
         <p> You have choosen these {toysSelected.length} toys!!</p>

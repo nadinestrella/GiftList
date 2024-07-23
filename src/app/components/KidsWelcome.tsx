@@ -10,12 +10,10 @@ export const KidsWelcome = ({ kidName, handleKidAge, kidAge }) => {
 
   return (
     <>
-      <div className="generalContainer">
-        <div>
-          <h3>Hello!!</h3>
-          <p>{kidName}</p>
-
-          <p>How old are you?</p>
+      <div className="flex flex-col justify-center items-center content-center gap-4">
+        <span>Hello!! {kidName}</span>
+        <form className="flex flex-col justify-center items-center content-center gap-4">
+          <label>How old are you?</label>
           <input
             minLength={1}
             maxLength={2}
@@ -24,7 +22,7 @@ export const KidsWelcome = ({ kidName, handleKidAge, kidAge }) => {
             value={kidAge}
             onChange={handleChange}
           />
-        </div>
+        </form>
       </div>
     </>
   );

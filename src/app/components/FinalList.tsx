@@ -2,8 +2,8 @@ import React from 'react';
 
 export const FinalList = ({ kidName, kidAge, toysSelected }) => {
   return (
-    <div className="generalContainer">
-      <p className="finalList">
+    <div className="flex flex-col justify-center items-center content-center gap-4">
+      <p className="p-1">
         Mum or Dad, these are the {kidName} selection acording to their age:
         {kidAge}. Copy these links to keep this information in a safe place.
       </p>
@@ -21,7 +21,7 @@ export const FinalList = ({ kidName, kidAge, toysSelected }) => {
           );
         })}
       </ol>
-      <div className="finalListShare">
+      <div className="text-xs">
         <p>Share</p>
         <p>whatapp</p>
         <p>email</p>
