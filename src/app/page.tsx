@@ -113,7 +113,10 @@ export default function Home() {
     slidesToScroll: 1,
   };
   return (
-    <Slider className="m-8" {...settings}>
+    <Slider
+      className=" bg-background2 flex flex-col min-h-96 w-80 md:w-tablet rounded-lg m-auto  "
+      {...settings}
+    >
       <div>
         <Login kidName={kidName} handleKidName={handleKidName} />
       </div>
