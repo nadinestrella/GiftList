@@ -6,3 +6,6 @@
 .slick-slider .slick-next:before {
   color: black;
 }
+.slick-dots li {
+  bottom: -3px;
+}

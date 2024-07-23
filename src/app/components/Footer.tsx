@@ -2,10 +2,8 @@ import React from 'react';
 
 export const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer__text">
-        <p>By Nadine Estrella</p>
-      </div>
+    <footer className="flex flex-col justify-center items-center relative -bottom-9 text-white">
+      <p>By Nadine Estrella</p>
 
       <div className="footer__icons">
         <i className="fa-brands fa-linkedin">icono linkedin</i>
