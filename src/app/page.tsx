@@ -25,11 +25,9 @@ export default function Home() {
   const [filters, setFilters] = useState<Filters>({ age: '', categories: [] });
 
   //estado para juguetes seleccionados
-
   const [toysSelected, setToysSelected] = useState<Toy[]>([]);
 
   // creamos un array con todas las categorias de los jugetes de la api
-
   const categories = toys.map((toy) => toy.category);
   // hacemos que sea una lista de categorias unicas
   const uniqueCategories = [...new Set(categories)];

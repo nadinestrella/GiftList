@@ -29,11 +29,13 @@ export const Categories: React.FC<CategoriesProp> = ({
           checked={selectedCategories.includes(category)}
         />
         <label className="categories__checkbox" htmlFor={category}>
-          {/* <Image
+          <Image
             className="categories__checkbox__image"
-            src={getImageUrl(`/categories/${category}.png`)}
+            src={`/categories/${category}.png`}
             alt="categories"
-          /> */}
+            width={50}
+            height={50}
+          />
         </label>
       </li>
     );
