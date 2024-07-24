@@ -1,7 +1,17 @@
 import React from 'react';
 import { InputForm } from './ui/InputForm';
 
-export const KidsWelcome = ({ kidName, handleKidAge, kidAge }) => {
+interface KidsWelcomeProps {
+  kidName: string;
+  handleKidAge: (value: string) => void;
+  kidAge: number;
+}
+
+export const KidsWelcome: React.FC<KidsWelcomeProps> = ({
+  kidName,
+  handleKidAge,
+  kidAge,
+}) => {
   // const navigate = useNavigate();
 
   const handleChange = (ev) => {
@@ -14,7 +24,15 @@ export const KidsWelcome = ({ kidName, handleKidAge, kidAge }) => {
       <div className="flex flex-col justify-center items-center content-center gap-4">
         <span>Hello!! {kidName}</span>
         <form className="flex flex-col justify-center items-center content-center gap-4">
-          <InputForm title="How old are you?" />
+          <InputForm
+            title="How old are you?"
+            inputValue={kidAge || ''}
+            onChange={handleChange}
+            placeholder="5"
+            type="number"
+            minLength={1}
+            maxLength={2}
+          />
           {/* <label>How old are you?</label> */}
           <input
             minLength={1}

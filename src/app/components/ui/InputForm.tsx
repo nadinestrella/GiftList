@@ -1,9 +1,10 @@
 interface InputFormProps {
   title: string;
-  inputValue: string;
+  inputValue: string & number;
   onChange?: (ev: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder: string;
   required?: boolean;
+  minLength?: number;
   maxLength?: number;
 }
 
@@ -13,7 +14,8 @@ export const InputForm = ({
   onChange,
   placeholder,
   required = false,
-  maxLength
+
+  maxLength,
 }: InputFormProps) => {
   return (
     <>
