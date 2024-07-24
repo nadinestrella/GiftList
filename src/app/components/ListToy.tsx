@@ -30,36 +30,46 @@ export const ListToy: React.FC<ListToyProps> = ({
   }, [filters, toys]);
 
   return (
-    <div className="flex flex-col justify-center items-center content-center gap-4">
+    <div className="flex flex-col justify-center items-center content-center gap-4 pb-5">
       <div>
         <h3>{kidName},</h3>
         <p>These are what we found for you!!</p>
-        <p>Select the 3 toys you like the most. </p>
+        <p>Select the {toysList.length} toys you like the most. </p>
       </div>
       <div>
-        <ul className="p-1 grid grid-cols-2 gap-2 md:grid-cols-3">
+        <ul className="p-1 grid grid-cols-2 gap-9 md:grid-cols-3">
           {toysList.map((toy, index) => {
             return (
-              <li key={index}>
-                <label>
+              <li
+                key={index}
+                className="flex align-middle justify-center w-24 h-24"
+              >
+                <label
+                  className={`w-28 h-auto md:h-32 border-2 border-background3 rounded-full overflow-hidden  hover:border-pink ${
+                    toysSelected.map((toy) => toy.id).includes(toy.id)
+                      ? 'border-pink border-8'
+                      : 'border-background3'
+                  }`}
+                >
                   <input
                     type="checkbox"
                     value={toy.id}
                     onChange={onToysChange}
                     checked={toysSelected.map((toy) => toy.id).includes(toy.id)}
+                    className="hidden"
                   />
                   <Image
-                    className="w-24 h-auto md:h-32"
                     src={toy.image}
-                    width={80}
-                    height={80}
+                    width={100}
+                    height={100}
                     alt="list toys"
                   />
-                  <strong className="block text-sm font-bold">
+
+                  <p className="text-sm font-bold hidden md:block">
                     {toy.model.length > 15
                       ? toy.model.slice(0, 15) + '...'
                       : toy.model}
-                  </strong>
+                  </p>
                 </label>
               </li>
             );

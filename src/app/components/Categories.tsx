@@ -17,7 +17,7 @@ export const Categories: React.FC<CategoriesProps> = ({
     return (
       <li
         key={category}
-        className="flex align-middle justify-center w-24 h-24 border-2 border-background3 rounded-full overflow-hidden   "
+        className="flex align-middle justify-center w-24 h-24 border-2 border-background3 rounded-full overflow-hidden"
       >
         <input
           className="hidden"

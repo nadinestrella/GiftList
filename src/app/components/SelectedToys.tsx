@@ -1,7 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
+import { Toy } from '@/types/toy';
 
-export const SelectedToys = ({ kidName, toysSelected }) => {
+interface SelectedToysProps {
+  kidName: string;
+  toysSelected: Toy[];
+}
+
+export const SelectedToys: React.FC<SelectedToysProps> = ({
+  kidName,
+  toysSelected,
+}) => {
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4">
       <div>

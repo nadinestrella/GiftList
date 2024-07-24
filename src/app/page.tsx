@@ -150,6 +150,7 @@ export default function Home() {
       <div>
         <FinalList
           kidName={kidName}
+          parentName={parentName}
           kidAge={filters.age}
           toysSelected={toysSelected}
         />
@@ -165,36 +166,3 @@ export default function Home() {
 //4listtoy
 //5selectedtoys
 //6finallist
-
-{
-  /* <Login kidName={kidName} handleKidName={handleKidName} />
-
-      <KidsWelcome
-        kidName={kidName}
-        handleKidName={handleKidName}
-        handleKidAge={handleKidAge}
-        kidAge={filters.age}
-      />
-
-      <Categories
-        uniqueCategories={uniqueCategories}
-        onCateoriesChange={onCateoriesChange}
-        selectedCategories={filters.categories}
-      />
-
-      <ListToy
-        toys={toys}
-        kidName={kidName}
-        filters={filters}
-        toysSelected={toysSelected}
-        onToysChange={onToysChange}
-      />
-
-      <SelectedToys kidName={kidName} toysSelected={toysSelected} />
-
-      <FinalList
-        kidName={kidName}
-        kidAge={filters.age}
-        toysSelected={toysSelected}
-      /> */
-}
