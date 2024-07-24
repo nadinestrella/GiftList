@@ -2,7 +2,17 @@ import React from 'react';
 
 import Image from 'next/image';
 
-export const Categories = ({
+interface CategoriesProp {
+  uniqueCategories: string[];
+  onCateoriesChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  selectedCategories: string[];
+}
+
+// const getImageUrl = (path: string): string => {
+//   return `/images${path}`;
+// };
+
+export const Categories: React.FC<CategoriesProp> = ({
   uniqueCategories,
   onCateoriesChange,
   selectedCategories,
@@ -19,11 +29,11 @@ export const Categories = ({
           checked={selectedCategories.includes(category)}
         />
         <label className="categories__checkbox" htmlFor={category}>
-          <Image
+          {/* <Image
             className="categories__checkbox__image"
             src={getImageUrl(`/categories/${category}.png`)}
             alt="categories"
-          />
+          /> */}
         </label>
       </li>
     );

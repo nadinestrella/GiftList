@@ -8,6 +8,7 @@ import { Categories } from './components/Categories';
 import { ListToy } from './components/ListToy';
 import { SelectedToys } from './components/SelectedToys';
 import { FinalList } from './components/FinalList';
+import toys from './toys.json';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -18,7 +19,7 @@ export default function Home() {
   const [parentName, setparentName] = useState<string>('');
   const [parentEmail, setparentEmail] = useState<string>('');
   const [kidName, setKidName] = useState<string>('');
-  const [toys, setToys] = useState<Toy[]>([]);
+  // const [toys, setToys] = useState<Toy[]>([]);
 
   // este estado nos sirve para filtrar en la api
   const [filters, setFilters] = useState<Filters>({ age: '', categories: [] });
@@ -27,29 +28,8 @@ export default function Home() {
 
   const [toysSelected, setToysSelected] = useState<Toy[]>([]);
 
-  // //aqui me llegan los juguetes desde la api
-  // useEffect(() => {
-  //   getToysFromApi().then((list) => {
-  //     setToys(list);
-  //   });
-  // }, []);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        console.log('Starting fetch request...');
-        const response = await fetch('../services/data.json');
-        const jsonData = await response.json();
-        console.log('Data fetched successfully:', jsonData);
-        setToys(jsonData);
-      } catch (error) {
-        console.error('Error fetching data, error');
-      }
-    };
-    fetchData();
-  }, []);
-
   // creamos un array con todas las categorias de los jugetes de la api
+
   const categories = toys.map((toy) => toy.category);
   // hacemos que sea una lista de categorias unicas
   const uniqueCategories = [...new Set(categories)];

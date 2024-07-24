@@ -33,15 +33,6 @@ export const KidsWelcome: React.FC<KidsWelcomeProps> = ({
             minLength={1}
             maxLength={2}
           />
-          {/* <label>How old are you?</label> */}
-          <input
-            minLength={1}
-            maxLength={2}
-            type="number"
-            placeholder="5"
-            value={kidAge}
-            onChange={handleChange}
-          />
         </form>
       </div>
     </>
