@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Toy, Filters } from '@/types/toy';
 import { Login } from './components/Login';
@@ -33,6 +33,21 @@ export default function Home() {
   //     setToys(list);
   //   });
   // }, []);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        console.log('Starting fetch request...');
+        const response = await fetch('../services/data.json');
+        const jsonData = await response.json();
+        console.log('Data fetched successfully:', jsonData);
+        setToys(jsonData);
+      } catch (error) {
+        console.error('Error fetching data, error');
+      }
+    };
+    fetchData();
+  }, []);
 
   // creamos un array con todas las categorias de los jugetes de la api
   const categories = toys.map((toy) => toy.category);
@@ -118,7 +133,14 @@ export default function Home() {
       {...settings}
     >
       <div>
-        <Login kidName={kidName} handleKidName={handleKidName} />
+        <Login
+          kidName={kidName}
+          handleKidName={handleKidName}
+          handleParentName={handleParentName}
+          parentName={parentName}
+          parentEmail={parentEmail}
+          handleParentEmail={handleParentEmail}
+        />
       </div>
       <div>
         <KidsWelcome
