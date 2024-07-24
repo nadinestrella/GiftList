@@ -81,11 +81,11 @@ export default function Home() {
     // si la categoria esta checked
     if (toyClickedChecked) {
       // añadimos al array
-      currentToys.push(toyClicked);
+      currentToys.push(toyClicked as Toy);
     } else {
       // si no esta checked, buscamos el index de la categoria
       const toyClickedIndex = currentToys.findIndex(
-        (toy) => toy.id === toyClicked.id
+        (toy) => toy.id === (toyClicked as Toy).id
       );
       // la eliminamos del array
       currentToys.splice(toyClickedIndex, 1);
@@ -137,7 +137,7 @@ export default function Home() {
       </div>
       <div>
         <ListToy
-          toys={toys}
+          toys={toys as Toy[]}
           kidName={kidName}
           filters={filters}
           toysSelected={toysSelected}

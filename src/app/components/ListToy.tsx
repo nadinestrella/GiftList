@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Filters, Toy } from '@/types/toy';
 
@@ -6,7 +6,7 @@ interface ListToyProps {
   kidName: string;
   toys: Toy[];
   filters: Filters;
-  toysSelected: string[];
+  toysSelected: Toy[];
   onToysChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
@@ -17,14 +17,18 @@ export const ListToy: React.FC<ListToyProps> = ({
   toysSelected,
   onToysChange,
 }) => {
-  const getToysFilteredByCategAndAge = () =>
-    toys
-      .filter((toy) => filters.categories.includes(toy.category))
-      .filter((toy) => toy.age <= Number(filters.age))
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 6);
+  const [toysList, setToysList] = useState<Toy[]>(toys);
 
-  const [toysList, setToysList] = useState(getToysFilteredByCategAndAge());
+  useEffect(() => {
+    setToysList(
+      toys
+        .filter((toy) => filters.categories.includes(toy.category))
+        .filter((toy) => toy.age <= Number(filters.age))
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 6)
+    );
+  }, [filters, toys]);
+
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4">
       <div>

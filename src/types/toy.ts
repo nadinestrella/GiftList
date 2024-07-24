@@ -4,7 +4,7 @@ export interface Toy {
   category: string;
   model: string;
   age: number;
-  price: number;
+  price?: number;
   image: string;
   link: string;
 }
