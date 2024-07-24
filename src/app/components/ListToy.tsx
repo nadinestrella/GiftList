@@ -1,8 +1,16 @@
-import React from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
+import { Filters, Toy } from '@/types/toy';
 
-export const ListToy = ({
+interface ListToyProps {
+  kidName: string;
+  toys: Toy[];
+  filters: Filters;
+  toysSelected: string[];
+  onToysChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+export const ListToy: React.FC<ListToyProps> = ({
   kidName,
   toys,
   filters,

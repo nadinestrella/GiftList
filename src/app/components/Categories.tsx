@@ -2,13 +2,13 @@ import React from 'react';
 
 import Image from 'next/image';
 
-interface CategoriesProp {
+interface CategoriesProps {
   uniqueCategories: string[];
   onCateoriesChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   selectedCategories: string[];
 }
 
-export const Categories: React.FC<CategoriesProp> = ({
+export const Categories: React.FC<CategoriesProps> = ({
   uniqueCategories,
   onCateoriesChange,
   selectedCategories,
