@@ -5,7 +5,7 @@ interface LoginProps {
   kidName: string;
   handleKidName: (value: string) => void;
   handleParentName: (value: string) => void;
-  parentEmail: string;
+  parentName: string;
   handleParentEmail: (value: string) => void;
 }
 
@@ -18,7 +18,9 @@ export const Login: React.FC<LoginProps> = ({
 }) => {
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4">
-      <h3 className="text-lg pt-3">Welcome to My Gift List</h3>
+      <h3 className="text-lg pt-3 text-background3 font-semibold">
+        Welcome to My Gift List
+      </h3>
       <form className="flex flex-col justify-center items-center content-center gap-4">
         <InputForm
           title="What is your name?"

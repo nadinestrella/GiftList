@@ -41,11 +41,11 @@ export const ListToy: React.FC<ListToyProps> = ({
   useEffect(() => {
     generateNewToysList();
   }, [generateNewToysList]);
-  console.log(toysSelected);
+
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4 p-5">
       <div>
-        <p>{kidName},</p>
+        <p className="font-semibold pb-2">{kidName},</p>
         <p>These are what we found for you!!</p>
         <p>Select the toys you like the most. </p>
       </div>

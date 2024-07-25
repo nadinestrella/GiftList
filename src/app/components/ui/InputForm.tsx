@@ -25,7 +25,7 @@ export const InputForm = ({
         value={inputValue}
         onChange={onChange}
         type="text"
-        className="rounded-full border-2 border-background3"
+        className="rounded-full border-2 border-background3 p-1 pl-2"
         required={required}
         maxLength={maxLength}
       ></input>

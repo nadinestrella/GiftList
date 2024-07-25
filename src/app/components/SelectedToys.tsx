@@ -14,7 +14,7 @@ export const SelectedToys: React.FC<SelectedToysProps> = ({
   return (
     <div className="flex flex-col  items-center content-center gap-4">
       <div>
-        <p>Congratulations {kidName}!! </p>
+        <p className="font-semibold pb-2">Congratulations {kidName}!! </p>
         <p> You have choosen these {toysSelected.length} toys!!</p>
       </div>
       <ul className="grid grid-col md:grid-cols-3 justify-center items-center content-center gap-4">

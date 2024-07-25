@@ -22,7 +22,7 @@ export const KidsWelcome: React.FC<KidsWelcomeProps> = ({
   return (
     <>
       <div className="flex flex-col justify-center items-center content-center gap-4">
-        <span>Hello!! {kidName}</span>
+        <span className="font-semibold">Hello!! {kidName}</span>
         <form className="flex flex-col justify-center items-center content-center gap-4">
           <InputForm
             title="How old are you?"
