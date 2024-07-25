@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Filters, Toy } from '@/types/toy';
 
@@ -19,7 +19,7 @@ export const ListToy: React.FC<ListToyProps> = ({
 }) => {
   const [toysList, setToysList] = useState<Toy[]>(toys);
 
-  const generateNewToysList = () => {
+  const generateNewToysList = useCallback(() => {
     //filtra por cat y edad
     const filteredToys = toys
       .filter((toy) => filters.categories.includes(toy.category))
@@ -36,11 +36,11 @@ export const ListToy: React.FC<ListToyProps> = ({
       .slice(0, 6 - toysSelected.length);
     //actualiza el estado con la nueva lista de juguetes
     setToysList([...newToysList, ...additionalToys]);
-  };
+  }, [toys, filters, toysSelected]);
   //se llama automaticamente cuando cambian los filtros, los juguetes disponibles o los juguetes seleccionados
   useEffect(() => {
     generateNewToysList();
-  }, [filters, toys, toysSelected]);
+  }, [generateNewToysList]);
 
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4 p-5">
