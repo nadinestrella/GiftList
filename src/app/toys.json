@@ -139,7 +139,7 @@
     "link": "https://www.toysrus.es/Nenuco-Mu%C3%B1eco-Blandito-5-Funciones-Rosa/p/K170148"
   },
   {
-    "id": "15",
+    "id": 15,
     "brand": "NENUCO",
     "category": "babies",
     "model": "Muñeco ¿Estás malito?",
@@ -150,7 +150,7 @@
   },
 
   {
-    "id": "16",
+    "id": 16,
     "brand": "NENUCO",
     "category": "babies",
     "model": "La cuna que te ayuda",
@@ -160,7 +160,7 @@
     "link": "https://www.toysrus.es/Nenuco-La-cuna-que-te-ayuda/p/K1041056"
   },
   {
-    "id": "17",
+    "id": 17,
     "brand": "BARBIE",
     "category": "barbies",
     "model": "Pack muñeca con mascotas",
@@ -170,7 +170,7 @@
     "link": "https://www.toysrus.es/Barbie-Pack-mu%C3%B1eca-con-mascotas/p/K1036814"
   },
   {
-    "id": "18",
+    "id": 18,
     "brand": "BARBIE",
     "category": "barbies",
     "model": "Pediatra - Muñeca Yo Quiero Ser",
@@ -180,7 +180,7 @@
     "link": "https://www.toysrus.es/Barbie-Pediatra-Mu%C3%B1eca-Yo-Quiero-Ser/p/K1041431"
   },
   {
-    "id": "19",
+    "id": 19,
     "brand": "BARBIE",
     "category": "barbies",
     "model": "Supermercado",
@@ -190,7 +190,7 @@
     "link": "https://www.toysrus.es/Barbie-Supermercado/p/K960783"
   },
   {
-    "id": "20",
+    "id": 20,
     "brand": "BARBIE",
     "category": "barbies",
     "model": "Muñeca Barbie y restaurante Cook´n Grill",
@@ -200,7 +200,7 @@
     "link": "https://www.toysrus.es/Barbie-Mu%C3%B1eca-Barbie-y-restaurante-Cook%C2%B4n-Grill/p/K1031260"
   },
   {
-    "id": "21",
+    "id": 21,
     "brand": "PLAY-DOH",
     "category": "play-doh",
     "model": "Pack 20 Botes",
@@ -210,7 +210,7 @@
     "link": "https://www.toysrus.es/Play-Doh-Pack-20-Botes/p/K13579"
   },
   {
-    "id": "22",
+    "id": 22,
     "brand": "PLAY-DOH",
     "category": "play-doh",
     "model": "Kit veterinario",
@@ -220,7 +220,7 @@
     "link": "https://www.toysrus.es/Play-Doh-Kit-veterinario/p/K1036673"
   },
   {
-    "id": "23",
+    "id": 23,
     "brand": "PLAY-DOH",
     "category": "play-doh",
     "model": "Rex el dino glotón",
@@ -230,7 +230,7 @@
     "link": "https://www.toysrus.es/Play-Doh-Rex-el-dino-glot%C3%B3n/p/K1026194"
   },
   {
-    "id": "24",
+    "id": 24,
     "brand": "PLAYMOBIL",
     "category": "playmobil",
     "model": "Playmobil 1.2.3 - Granja Maletín",
@@ -240,7 +240,7 @@
     "link": "https://www.toysrus.es/Playmobil-1-2-3-Granja-Malet%C3%ADn-6962/p/K367214"
   },
   {
-    "id": "25",
+    "id": 25,
     "brand": "PLAYMOBIL",
     "category": "playmobil",
     "model": "Helicóptero de policía: persecución del vehículo huido",
@@ -250,7 +250,7 @@
     "link": "https://www.toysrus.es/Playmobil-Helic%C3%B3ptero-de-polic%C3%ADa%3A-persecuci%C3%B3n-del-veh%C3%ADculo-huido-70575/p/K1025688"
   },
   {
-    "id": "26",
+    "id": 26,
     "brand": "PLAYMOBIL",
     "category": "playmobil",
     "model": "Casa de campo y animales de granja Playmobil Country",
@@ -260,7 +260,7 @@
     "link": "https://www.toysrus.es/Playmobil-Casa-de-campo-y-animales-de-granja-Playmobil-Country-%E3%85%A4/p/K1048335"
   },
   {
-    "id": "27",
+    "id": 27,
     "brand": "PLAYMOBIL",
     "category": "playmobil",
     "model": "Playmobil City Life: Abuelos y Nieto, Set",
@@ -270,7 +270,7 @@
     "link": "https://www.toysrus.es/Playmobil-Playmobil-City-Life%3A-Abuelos-y-Nieto%2C-Set-70990-%E3%85%A4/p/K1048304"
   },
   {
-    "id": "28",
+    "id": 28,
     "brand": "CLEMENTONI",
     "category": "puzzle",
     "model": "Patrulla Canina - Puzzle infantil progresivo 10 en 1 de la Patrulla Canina",
@@ -280,7 +280,7 @@
     "link": "https://www.toysrus.es/Clementoni-Patrulla-Canina-Puzzle-infantil-progresivo-10-en-1-de-la-Patrulla-Canina-%E3%85%A4/p/K1046806"
   },
   {
-    "id": "29",
+    "id": 29,
     "brand": "EDUCA BORRAS",
     "category": "puzzle",
     "model": "Los Vengadores - Puzzle 2x48 Piezas",
@@ -290,7 +290,7 @@
     "link": "https://www.toysrus.es/Educa-Borr%C3%A1s-Los-Vengadores-Puzzle-2x48-Piezas/p/K110879B"
   },
   {
-    "id": "30",
+    "id": 30,
     "brand": "RAVENSBURGER",
     "category": "puzzle",
     "model": "Disney - Puzzle 2x24 pzs Frozen II",
@@ -300,7 +300,7 @@
     "link": "https://www.toysrus.es/Ravensburger-Disney-Puzzle-2x24-pzs-Frozen-II/p/K1043489"
   },
   {
-    "id": "31",
+    "id": 31,
     "brand": "RAVENSBURGER",
     "category": "puzzle",
     "model": "Princesas Disney - Pack 2 puzzles 24 piezas",
@@ -311,72 +311,72 @@
   },
   {
     "id": 32,
-    "brand": "Playmobil",
-    "category": "playmobil",
-    "model": "Playmobil - Campamento de Verano",
-    "age": 4,
-    "price": 49.99,
-    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI4NjA5fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGEwM2QwMGE0YmZmZTU4ODViNmU3ZjI4NzAyOTUwNzU2YjQ0OWY2ZjZkZmMwN2MxZGM0N2E0YWM2NWE3M2U",
-    "link": "https://www.toysrus.es/Playmobil-Campamento-de-Verano/p/K1033934"
+    "brand": "FUNKO UK LIMITED",
+    "category": "funko",
+    "model": "Disney - Pack 4 Figuras Winnie the Pooh - Figura Funko Pop",
+    "age": 5,
+    "price": 39.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI5OTk1fGltYWdlL2pwZWd8YUdNeUwyaGtNeTh4TWprME9UazNPREk0TkRBMk1nfDZkZTZkMDg5N2E4NGZkNjg0ZjdlNTU4OWJiMWMzZGQ5ZmRkNzAzNGE4NTQ0MDJmZDA5NGY5ZWNlNGE2OGE2ZTE",
+    "link": "https://www.toysrus.es/Disney-Pack-4-Figuras-Winnie-the-Pooh-Figura-Funko-Pop/p/K1056401"
   },
   {
     "id": 33,
     "brand": "Playmobil",
     "category": "playmobil",
-    "model": "Playmobil - Parque de Atracciones",
-    "age": 4,
-    "price": 89.99,
-    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI4NDY3fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGI3MzE0ZTg0Zjg0YjM5YjJiNjA5MzMxZjI1MzExMDYxYjFhMDk2NzI5NDMwMzM0ZjYxY2FmN2QxYzU3Y2U",
-    "link": "https://www.toysrus.es/Playmobil-Parque-de-Atracciones/p/K1034482"
+    "model": "Playmobil - Misión Espacio Lanzadera de juguete ㅤ",
+    "age": 3,
+    "price": 45.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI2MDQ2fGltYWdlL2pwZWd8YURRMUwyZ3lZUzh4TWpnMk56WTFPREU0TmpjNE1nfDYwNWYxZmYxNDJhZGNiOGVhYjAyMGUyYzQwYjc0N2U3OWNiNzA4YjI5NmYxNjkxNDAzMzMyZGQxMDYyZDY5NDc",
+    "link": "https://www.toysrus.es/Playmobil-Misi%C3%B3n-Espacio-Lanzadera-de-juguete-%E3%85%A4/p/K1054329"
   },
   {
     "id": 34,
     "brand": "Nerf",
     "category": "nerf",
-    "model": "Nerf - Elite Disruptor",
+    "model": "Nerf Elite 2.0 - Shockwave RD-15",
     "age": 8,
-    "price": 19.99,
-    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDEwNDA1fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGUxM2IyNDc5MmFmNDQ1ZDA3N2Y1NzllNjFhZDg0Mzg1YWM5ZjQ1NTY4MWM3NWI0MjNhNTc1MzY2NjRkODg",
-    "link": "https://www.toysrus.es/Nerf-Elite-Disruptor/p/K1021416"
+    "price": 36.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDMyNDY2fGltYWdlL2pwZWd8YUdVeEwyZ3hNQzh4TURFM09EYzVORGc0TVRBMU5BfGRiODY3NTE3MzVmZGMwZmRmNzA1NzMwNDcxNjIzYmQ0OWFlNDU3MTdmOWE5OGE0M2IzNmJjZDgyZTlhOTY5MWU",
+    "link": "https://www.toysrus.es/Nerf-Elite-2-0-Shockwave-RD-15/p/K1018929"
   },
   {
     "id": 35,
     "brand": "Nerf",
     "category": "nerf",
-    "model": "Nerf - Ultra Dorado",
+    "model": "Nerf - Ultra Select",
     "age": 8,
-    "price": 29.99,
-    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDMxNTc0fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGE0NzViZDBkZGZlODc3MTNjMTliNzQxNWEwNTE2ZjA0ODJkZTMwZDc0NGIyMmY4YzUxM2Q1MzU0Y2UxYTM",
-    "link": "https://www.toysrus.es/Nerf-Ultra-Dorado/p/K1035743"
+    "price": 64.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI3NjM0fGltYWdlL2pwZWd8YUdNNUwyZzFaQzh4TVRNeE56TTVORFl3TkRBMk1nfGVlZTllY2E3NWM5NmZlNjlkZjEzMTM0Njg3ZDQ3MWFhZjExMGYyMWNmODU3ZDJhODAwMmE2ZGQ4YjY3M2YxZGU",
+    "link": "https://www.toysrus.es/Nerf-Ultra-Select/p/K1030947"
   },
   {
     "id": 36,
     "brand": "Nerf",
     "category": "nerf",
-    "model": "Nerf - Fortnite AR-L",
+    "model": "Nerf - Dinosquad Tedorrak",
     "age": 8,
-    "price": 49.99,
-    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI2NjQ4fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGE3MjBiYTY2M2U1MzU1ZTVmMDQ0YTM5NGM1MjMyY2M4M2FjOTMxZDM4Y2JjOWFkZTExNmM3ZTEwNDJhZTc",
-    "link": "https://www.toysrus.es/Nerf-Fortnite-AR-L/p/K1031104"
+    "price": 29.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDIxOTc1fGltYWdlL2pwZWd8YURZekwyaGxOQzh4TWpZeU5UQTVOall3TlRjeU5nfDRjNzBlNmY4NzAzOWY5OGE0MzdlODIzZTdmNGMxNWFmN2I4ZWJhNzY5ZjY5NGQ3NzI1OTc3NDk0YmYxYjAwNGQ",
+    "link": "https://www.toysrus.es/Nerf-Dinosquad-Tedorrak/p/K1046558"
   },
   {
     "id": 37,
-    "brand": "Funko Pop!",
+    "brand": "FUNKO UK LIMITED",
     "category": "funko",
-    "model": "Funko Pop! - Figura Bob Esponja",
-    "age": 3,
-    "price": 12.99,
-    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI0Njk5fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGE4YjExZGM1ZDAwYWM3ZDU0MzNmZTJiYmI5MzIxZmYxYThmY2JjNjI5NjM0M2M1NjRmYmE0NjU5ZjRlM2Q",
-    "link": "https://www.toysrus.es/Funko-Pop-Figura-Bob-Esponja/p/K1033816"
+    "model": "Lilo&Stitch - Stitch coM Ukelele ",
+    "age": 5,
+    "price": 16.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDE5OTIyfGltYWdlL2pwZWd8YURZMkwyaGpZeTh4TVRnMk1EQXhPRFUyTVRBMU5BfDdjOGIzNDBkZTc2NjNmMDk5MDJjZWRiMDMyYmU5MmJmOTYyZjA1YzE4ZTk3MDBlNTE3YWYzMmFlZWJkZjJmNGI",
+    "link": "https://www.toysrus.es/Disney-LiloyStitch-Stitch-coM-Ukelele-Figura-Funko-POP/p/K1026243"
   },
   {
     "id": 38,
-    "brand": "Funko Pop!",
+    "brand": "FUNKO UK LIMITED",
     "category": "funko",
-    "model": "Funko Pop! - Figura Harry Potter",
-    "age": 3,
-    "price": 14.99,
-    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDI2MDg0fGltYWdlL2pwZWd8YUdJekwyZ3hPQzh4T0RrMk9qVXhNRGt3TVRJMk5BfGU4Y2VjNWM2YzE4NWI5NDJmNjM3ZjU2ODlhMmJmY2MxY2M2MTg5MzE2NmIyM2JkY2U5M2M1MTI1NTc0NjU",
-    "link": "https://www.toysrus.es/Funko-Pop-Figura-Harry-Potter/p/K1033501"
+    "model": "Disney 100 Mirabel ",
+    "age": 5,
+    "price": 16.99,
+    "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDQyOTY4fGltYWdlL2pwZWd8YURFeUwyaGpNaTh4TkRNMU56YzBPVFU1TmpFNU1BfDM0YmFlMTkwNzYzMjllY2E0N2I0MWUzZTkwOTQzYmQxZTQ4M2ZmZWY1MDZkMmM3OTcxMTBjMmQxZjcwYzY3ZmE",
+    "link": "https://www.toysrus.es/Funko-Disney-100-Mirabel-%E3%85%A4/p/K1062923"
   }
 ]

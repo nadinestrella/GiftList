@@ -17,9 +17,8 @@ import Slider from 'react-slick';
 
 export default function Home() {
   const [parentName, setparentName] = useState<string>('');
-  const [parentEmail, setparentEmail] = useState<string>('');
+  // const [parentEmail, setparentEmail] = useState<string>('');
   const [kidName, setKidName] = useState<string>('');
-  // const [toys, setToys] = useState<Toy[]>([]);
 
   // este estado nos sirve para filtrar en la api
   const [filters, setFilters] = useState<Filters>({ age: '', categories: [] });
@@ -40,9 +39,9 @@ export default function Home() {
     setparentName(value);
   };
 
-  const handleParentEmail = (value: string) => {
-    setparentEmail(value);
-  };
+  // const handleParentEmail = (value: string) => {
+  //   setparentEmail(value);
+  // };
 
   const onCateoriesChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     // cogemos el valor del checkbox (category name)
@@ -70,6 +69,7 @@ export default function Home() {
 
   const onToysChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     // cogemos el valor del checkbox (category name)
+
     const toyClicked = toys.find(
       (toy) => toy.id === Number(event.target.value)
     );
@@ -107,7 +107,7 @@ export default function Home() {
   };
   return (
     <Slider
-      className=" bg-background2 flex flex-col min-h-96 w-80 md:w-tablet rounded-lg m-auto  "
+      className=" bg-background2 flex flex-col min-h-96 w-80 md:w-tablet rounded-lg m-auto p-2  "
       {...settings}
     >
       <div>
@@ -116,8 +116,7 @@ export default function Home() {
           handleKidName={handleKidName}
           handleParentName={handleParentName}
           parentName={parentName}
-          parentEmail={parentEmail}
-          handleParentEmail={handleParentEmail}
+          // handleParentEmail={handleParentEmail}
         />
       </div>
       <div>

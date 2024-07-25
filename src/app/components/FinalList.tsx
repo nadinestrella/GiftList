@@ -26,10 +26,10 @@ export const FinalList: React.FC<FinalListProps> = ({
         {toysSelected.map((toy, index) => {
           return (
             <li key={index} className="text-blue-700">
-              <a href={toy.link} target="_blank">
-                {toy.model.length > 25
-                  ? toy.model.slice(0, 50) + '...'
-                  : toy.model}
+              <a href={toy?.link} target="_blank">
+                {toy?.model.length > 25
+                  ? toy?.model.slice(0, 50) + '...'
+                  : toy?.model}
               </a>
             </li>
           );

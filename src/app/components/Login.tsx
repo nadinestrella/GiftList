@@ -4,7 +4,6 @@ import { InputForm } from './ui/InputForm';
 interface LoginProps {
   kidName: string;
   handleKidName: (value: string) => void;
-  parentName: string;
   handleParentName: (value: string) => void;
   parentEmail: string;
   handleParentEmail: (value: string) => void;
@@ -15,7 +14,6 @@ export const Login: React.FC<LoginProps> = ({
   handleKidName,
   parentName,
   handleParentName,
-  parentEmail,
   handleParentEmail,
 }) => {
   return (
@@ -31,17 +29,6 @@ export const Login: React.FC<LoginProps> = ({
           placeholder="Nadine"
           required={true}
           maxLength={15}
-        />
-
-        <InputForm
-          title="Email"
-          inputValue={parentEmail || ''}
-          placeholder="nadinestrella@gmail.com"
-          required={true}
-          maxLength={30}
-          onChange={(ev) => {
-            handleParentEmail(ev.target.value);
-          }}
         />
 
         <InputForm

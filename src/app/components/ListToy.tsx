@@ -41,13 +41,13 @@ export const ListToy: React.FC<ListToyProps> = ({
   useEffect(() => {
     generateNewToysList();
   }, [generateNewToysList]);
-
+  console.log(toysSelected);
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4 p-5">
       <div>
         <p>{kidName},</p>
         <p>These are what we found for you!!</p>
-        <p>Select the {toysList.length} toys you like the most. </p>
+        <p>Select the toys you like the most. </p>
       </div>
       <div>
         <ul className="p-1 grid grid-cols-2 gap-9 md:grid-cols-3 md:gap-12">
