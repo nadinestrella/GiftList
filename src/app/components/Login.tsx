@@ -6,7 +6,7 @@ interface LoginProps {
   handleKidName: (value: string) => void;
   handleParentName: (value: string) => void;
   parentName: string;
-  handleParentEmail: (value: string) => void;
+  handleParentEmail?: (value: string) => void;
 }
 
 export const Login: React.FC<LoginProps> = ({

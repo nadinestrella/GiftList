@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 import { InputForm } from './ui/InputForm';
 
 interface KidsWelcomeProps {
@@ -14,7 +14,7 @@ export const KidsWelcome: React.FC<KidsWelcomeProps> = ({
 }) => {
   // const navigate = useNavigate();
 
-  const handleChange = (ev) => {
+  const handleChange = (ev: ChangeEvent<HTMLInputElement>) => {
     //coge el valor del input
     handleKidAge(ev.target.value);
   };

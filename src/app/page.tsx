@@ -116,15 +116,13 @@ export default function Home() {
           handleKidName={handleKidName}
           handleParentName={handleParentName}
           parentName={parentName}
-          // handleParentEmail={handleParentEmail}
         />
       </div>
       <div>
         <KidsWelcome
           kidName={kidName}
-          handleKidName={handleKidName}
           handleKidAge={handleKidAge}
-          kidAge={filters.age}
+          kidAge={Number(filters.age)}
         />
       </div>
       <div>
@@ -150,7 +148,7 @@ export default function Home() {
         <FinalList
           kidName={kidName}
           parentName={parentName}
-          kidAge={filters.age}
+          kidAge={Number(filters.age)}
           toysSelected={toysSelected}
         />
       </div>
