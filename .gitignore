@@ -1,68 +1,36 @@
-# Created by https://www.gitignore.io/api/sass,node,bower,macos
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Bower
-bower_components
-.bower-cache
-.bower-registry
-.bower-tmp
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
 
-# macOS
-*.DS_Store
-.AppleDouble
-.LSOverride
+# testing
+/coverage
 
-# Linux
-*.directory
+# next.js
+/.next/
+/out/
 
-# Thumbnails
-._*
+# production
+/build
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
+# misc
+.DS_Store
+*.pem
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# Logs
-logs
-*.log
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-# Dependency directories
-node_modules/
-dist
-dist-ssr
-*.local
+# local env files
+.env*.local
 
-# Sass
-.sass-cache/
-*.css.map
+# vercel
+.vercel
 
-# JS Sourcemaps
-*.js.map
-
-# vscode
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-.env
+# typescript
+*.tsbuildinfo
+next-env.d.ts

@@ -7,7 +7,7 @@ Welcome to **The Gift List**, an interactive web application designed to make gi
 - **Toy Categories**: Kids can browse through a selection of toy categories to find exactly what they're interested in.
 - **Curated Selection**: Each category showcases 6 carefully selected toys to ensure a variety of options without overwhelming choice.
 - **Child-Friendly Interface**: Designed with young users in mind, our interface is simple, intuitive, and safe for kids to navigate.
-- **Parental Notification**:  (work in progress) Once a selection is made, parents receive a neatly compiled list of the 3 chosen toys, making it easy to keep track of their child's current favorites.
+- **Parental Notification**: (work in progress) Once a selection is made, parents receive a neatly compiled list of the 3 chosen toys, making it easy to keep track of their child's current favorites.
 
 ## Getting Started
 
@@ -22,16 +22,25 @@ The GiftList API is [on this repo](https://github.com/nadinestrella/giftlist-api
 ### Installation 💻🖥️⌨️
 
 1. Clone the repo
+
    ```sh
    git clone https://github.com/nadinestrella/GiftList.git
 
+   ```
+
 2. Install NPM packages
+
    ```sh
     npm install
 
+   ```
+
 3. Run the application locally (frontend)
-    ```sh
-    npm run dev 
+
+   ```sh
+   npm run dev
+
+   ```
 
 4. This command will start the app and open it in your default web browser. If it doesn't open automatically, you can visit http://localhost:5173/#/ manually.
 
@@ -48,10 +57,3 @@ We welcome contributions from the community! If you would like to contribute to 
 ### Contact 📬
 
 Project Link: https://github.com/nadinestrella/GiftList
-
-
-
-
-
-
-
