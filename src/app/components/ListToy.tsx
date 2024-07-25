@@ -90,7 +90,7 @@ export const ListToy: React.FC<ListToyProps> = ({
         </ul>
       </div>
       <div>
-        <p className="flex flex-row gap-4">
+        <p className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
           Any match?{' '}
           <button
             onClick={generateNewToysList}

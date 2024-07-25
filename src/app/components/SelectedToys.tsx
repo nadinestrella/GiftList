@@ -12,25 +12,25 @@ export const SelectedToys: React.FC<SelectedToysProps> = ({
   toysSelected,
 }) => {
   return (
-    <div className="flex flex-col justify-center items-center content-center gap-4">
+    <div className="flex flex-col  items-center content-center gap-4">
       <div>
-        <p>{kidName} </p>
+        <p>Congratulations {kidName}!! </p>
         <p> You have choosen these {toysSelected.length} toys!!</p>
       </div>
-      <ul>
+      <ul className="grid grid-col md:grid-cols-3 justify-center items-center content-center gap-4">
         {toysSelected.map((toy, index) => {
           return (
-            <li key={index}>
+            <li key={index} className="w-28 h-28 md:w-32 md:h-32 mb-14 ">
               <Image
-                className="toys__image"
+                className="w-full h-full object-cover rounded-full border-2 border-background3 overflow-hidden "
                 src={toy.image}
-                width={80}
-                height={80}
-                alt="toy selected"
+                width={100}
+                height={100}
+                alt={`toy" ${toy.brand}`}
               />
-              <strong className="toys__title">
+              <strong className="hidden md:block text-sm">
                 {toy.model.length > 15
-                  ? toy.model.slice(0, 15) + '...'
+                  ? toy.model.slice(0, 40) + '...'
                   : toy.model}
               </strong>
             </li>
