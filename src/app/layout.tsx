@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'GiftList',
   description: 'For kids to kids',
   icons: {
-    icon: '/favicon.jpg',
+    icon: '/images/favicon.jpg',
   },
 };
 
