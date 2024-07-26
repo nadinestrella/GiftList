@@ -25,7 +25,7 @@ export const FinalList: React.FC<FinalListProps> = ({
       <ol>
         {toysSelected.map((toy, index) => {
           return (
-            <li key={index} className="text-blue-700">
+            <li key={index} className="text-blue-700 pb-2">
               <a href={toy.link} target="_blank">
                 {toy.model.length > 25
                   ? toy.model.slice(0, 50) + '...'
