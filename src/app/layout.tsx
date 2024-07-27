@@ -3,6 +3,9 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -10,7 +13,7 @@ export const metadata: Metadata = {
   title: 'GiftList',
   description: 'For kids to kids',
   icons: {
-    icon: '/favicon.jpg',
+    icon: '/images/favicon.jpg',
   },
 };
 

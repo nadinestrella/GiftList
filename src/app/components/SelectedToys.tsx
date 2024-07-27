@@ -21,13 +21,15 @@ export const SelectedToys: React.FC<SelectedToysProps> = ({
         {toysSelected.map((toy, index) => {
           return (
             <li key={index} className="w-28 h-28 md:w-32 md:h-32 mb-14 ">
-              <Image
-                className="w-full h-full object-cover rounded-full border-2 border-background3 overflow-hidden "
-                src={toy.image}
-                width={100}
-                height={100}
-                alt={`toy" ${toy.brand}`}
-              />
+              <a href={toy.link} target="_blank">
+                <Image
+                  className="w-full h-full object-cover rounded-full border-2 border-background3 overflow-hidden hover:scale-125"
+                  src={toy.image}
+                  width={100}
+                  height={100}
+                  alt={`toy" ${toy.brand}`}
+                />
+              </a>
               <strong className="hidden md:block text-sm">
                 {toy.model.length > 15
                   ? toy.model.slice(0, 40) + '...'

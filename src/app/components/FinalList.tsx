@@ -20,12 +20,14 @@ export const FinalList: React.FC<FinalListProps> = ({
         {parentName}, these are the {kidName} selection acording to their age:
         {kidAge}.
       </p>
-      <p>Copy these links to keep this information in a safe place.</p>
+      <p className="pb-2 md:pb-4">
+        Copy these links to keep this information in a safe place.
+      </p>
 
       <ol>
         {toysSelected.map((toy, index) => {
           return (
-            <li key={index} className="text-blue-700">
+            <li key={index} className="text-blue-700 pb-2">
               <a href={toy.link} target="_blank">
                 {toy.model.length > 25
                   ? toy.model.slice(0, 50) + '...'
@@ -35,13 +37,13 @@ export const FinalList: React.FC<FinalListProps> = ({
           );
         })}
       </ol>
-      <div className="text-xs">
+      {/* <div className="text-xs">
         <p>Share</p>
         <p>whatapp</p>
         <p>email</p>
         <p>sms</p>
-      </div>
-      <div className="text-background3 font-semibold">
+      </div> */}
+      <div className="text-background3 font-semibold pt-5">
         Thank you for using The Gift List {''}❤️
       </div>
     </div>
