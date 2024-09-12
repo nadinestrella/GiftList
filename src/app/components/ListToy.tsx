@@ -58,7 +58,7 @@ export const ListToy: React.FC<ListToyProps> = ({
                 className="flex flex-col align-middle justify-center"
               >
                 <label
-                  className={`w-28 h-28 md:w-32 md:h-32 border-2 border-background3 rounded-full overflow-hidden  hover:border-pink ${
+                  className={`w-24 h-24 md:w-32 md:h-32 border-2 border-background3 rounded-full overflow-hidden  hover:border-pink ${
                     toysSelected.map((toy) => toy.id).includes(toy.id)
                       ? 'border-pink border-8'
                       : 'border-background3'
