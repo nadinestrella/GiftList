@@ -44,7 +44,7 @@ export const ListToy: React.FC<ListToyProps> = ({
 
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4 p-5">
-      <div>
+      <div className="md:flex md:flex-col md:items-start">
         <p className="font-semibold pb-2">{kidName},</p>
         <p>These are what we found for you!!</p>
         <p>Select the toys you like the most: </p>
