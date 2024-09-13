@@ -107,7 +107,7 @@ export default function Home() {
   };
   return (
     <Slider
-      className=" bg-background2 flex flex-col min-h-96 w-64 md:w-tablet rounded-lg m-auto p-2  "
+      className=" bg-background2 flex flex-col min-h-96 w-64 md:w-3/4 lg:w-tablet rounded-lg m-auto p-2  "
       {...settings}
     >
       <div>

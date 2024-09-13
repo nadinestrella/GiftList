@@ -17,8 +17,9 @@ export const FinalList: React.FC<FinalListProps> = ({
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4 p-4">
       <p className="p-1">
-        {parentName}, these are the {kidName} selection acording to their age:
-        {kidAge}.
+        <strong>{parentName}</strong>, these are the <strong>{kidName}</strong>{' '}
+        selection according to their age:
+        <strong>{kidAge}</strong>.
       </p>
       <p className="pb-2 md:pb-4">
         Copy these links to keep this information in a safe place.
@@ -43,8 +44,12 @@ export const FinalList: React.FC<FinalListProps> = ({
         <p>email</p>
         <p>sms</p>
       </div> */}
-      <div className="text-background3 font-semibold pt-5">
-        Thank you for using The Gift List {''}❤️
+      <div className="text-background3 font-semibold pt-5 text-center">
+        <p>Thanks for using</p>{' '}
+        <p>
+          The Gift List {''}
+          <span className="animate-heartbeat text-2xl ">❤️</span>
+        </p>
       </div>
     </div>
   );

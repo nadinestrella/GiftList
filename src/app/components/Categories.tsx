@@ -45,9 +45,9 @@ export const Categories: React.FC<CategoriesProps> = ({
     );
   });
   return (
-    <div className="flex flex-col justify-center items-center content-center gap-4">
+    <div className="flex flex-col justify-center  content-center gap-3">
       <h3>What do you like to play with? </h3>
-      <p>Choose as many options as you like</p>
+      <p>Choose as many options as you like:</p>
       <ul className="grid grid-cols-2 md:grid-cols-3 gap-8">
         {renderCategories}
       </ul>

@@ -47,7 +47,7 @@ export const ListToy: React.FC<ListToyProps> = ({
       <div>
         <p className="font-semibold pb-2">{kidName},</p>
         <p>These are what we found for you!!</p>
-        <p>Select the toys you like the most. </p>
+        <p>Select the toys you like the most: </p>
       </div>
       <div>
         <ul className="p-1 grid grid-cols-2 gap-9 md:grid-cols-3 md:gap-12">
@@ -94,9 +94,9 @@ export const ListToy: React.FC<ListToyProps> = ({
           Any match?{' '}
           <button
             onClick={generateNewToysList}
-            className="w-28 h-6 bg-background3 text-white border-0 rounded-full hover:bg-nextBtn"
+            className="w-28 h-6 bg-background3 text-white border-0 rounded-full hover:bg-nextBtn text-sm "
           >
-            Try again
+            Try again 🎲
           </button>
         </p>
       </div>
