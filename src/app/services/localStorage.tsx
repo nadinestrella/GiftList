@@ -4,7 +4,7 @@ const setInLocalStorage = (key: string, value: any) => {
 };
 
 const getFromLocalStorage = (key: string, defaultValue: any) => {
-  const localStorageData = localStorage.getItem('data');
+  const localStorageData = localStorage.getItem(key);
   if (localStorageData === null) {
     return defaultValue;
   } else {

@@ -14,7 +14,6 @@ export const Login: React.FC<LoginProps> = ({
   handleKidName,
   parentName,
   handleParentName,
-  handleParentEmail,
 }) => {
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4">
