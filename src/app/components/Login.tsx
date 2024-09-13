@@ -23,7 +23,7 @@ export const Login: React.FC<LoginProps> = ({
       </h3>
       <form className="flex flex-col justify-center items-center content-center gap-4">
         <InputForm
-          title="What is your name?"
+          title="What is your name? 😀"
           inputValue={parentName || ''}
           onChange={(ev) => {
             handleParentName(ev.target.value);
@@ -34,7 +34,7 @@ export const Login: React.FC<LoginProps> = ({
         />
 
         <InputForm
-          title="What is your son's name?"
+          title="What is your kid's name?👦 👧"
           placeholder=" Liam "
           inputValue={kidName || ''}
           required={true}

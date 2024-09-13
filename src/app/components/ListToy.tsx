@@ -44,10 +44,10 @@ export const ListToy: React.FC<ListToyProps> = ({
 
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4 p-5">
-      <div>
+      <div className="md:flex md:flex-col md:items-start">
         <p className="font-semibold pb-2">{kidName},</p>
         <p>These are what we found for you!!</p>
-        <p>Select the toys you like the most. </p>
+        <p>Select the toys you like the most: </p>
       </div>
       <div>
         <ul className="p-1 grid grid-cols-2 gap-9 md:grid-cols-3 md:gap-12">
@@ -58,7 +58,7 @@ export const ListToy: React.FC<ListToyProps> = ({
                 className="flex flex-col align-middle justify-center"
               >
                 <label
-                  className={`w-28 h-28 md:w-32 md:h-32 border-2 border-background3 rounded-full overflow-hidden  hover:border-pink ${
+                  className={`w-24 h-24 md:w-32 md:h-32 border-2 border-background3 rounded-full overflow-hidden  hover:border-pink ${
                     toysSelected.map((toy) => toy.id).includes(toy.id)
                       ? 'border-pink border-8'
                       : 'border-background3'
@@ -94,9 +94,9 @@ export const ListToy: React.FC<ListToyProps> = ({
           Any match?{' '}
           <button
             onClick={generateNewToysList}
-            className="w-28 h-6 bg-background3 text-white border-0 rounded-full hover:bg-nextBtn"
+            className="w-28 h-6 bg-background3 text-white border-0 rounded-full hover:bg-nextBtn text-sm "
           >
-            Try again
+            Try again 🎲
           </button>
         </p>
       </div>

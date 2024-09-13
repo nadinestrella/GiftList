@@ -24,6 +24,16 @@ const config: Config = {
       width: {
         tablet: '43.75rem',
       },
+      keyframes: {
+        heartbeat: {
+          '0%, 50%, 100%': { transform: 'scale(1)', opacity: '0.7' },
+          '25%, 75%': { transform: 'scale(1.1)', opacity: '1' },
+        },
+      },
+      // Definimos la animación
+      animation: {
+        heartbeat: 'heartbeat 2s infinite',
+      },
     },
   },
   plugins: [],
