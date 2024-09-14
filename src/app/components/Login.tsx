@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 import { InputForm } from './ui/InputForm';
 
 interface LoginProps {
@@ -7,6 +7,8 @@ interface LoginProps {
   handleParentName: (value: string) => void;
   parentName: string;
   handleParentEmail?: (value: string) => void;
+  kidAge: number;
+  handleKidAge: (value: string) => void;
 }
 
 export const Login: React.FC<LoginProps> = ({
@@ -14,7 +16,14 @@ export const Login: React.FC<LoginProps> = ({
   handleKidName,
   parentName,
   handleParentName,
+  kidAge,
+  handleKidAge,
 }) => {
+  const handleChange = (ev: ChangeEvent<HTMLInputElement>) => {
+    //coge el valor del input
+    handleKidAge(ev.target.value);
+  };
+
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4">
       <h3 className="text-lg pt-3 text-background3 font-semibold">
@@ -41,21 +50,17 @@ export const Login: React.FC<LoginProps> = ({
           onChange={(ev) => {
             handleKidName(ev.target.value);
           }}
-
-          // input={{
-          //   onChange: (ev) => {
-          //     handleKidName(ev.target.value);
-          //   },
-          // }}
         />
-        {/* <label>What is your son is name? </label> */}
-        {/* <input
-          type="text"
-          placeholder=" Liam "
-          onChange={(ev) => {
-            handleKidName(ev.target.value);
-          }} */}
-        {/* /> */}
+        <InputForm
+          title="How old are he/she?👦 👧"
+          placeholder="5"
+          inputValue={kidAge || ''}
+          onChange={handleChange}
+          required={true}
+          type="number"
+          minLength={1}
+          maxLength={2}
+        />
       </form>
     </div>
   );

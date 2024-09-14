@@ -6,12 +6,14 @@ interface CategoriesProps {
   uniqueCategories: string[];
   onCateoriesChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   selectedCategories: string[];
+  kidName: string;
 }
 
 export const Categories: React.FC<CategoriesProps> = ({
   uniqueCategories,
   onCateoriesChange,
   selectedCategories,
+  kidName,
 }) => {
   const renderCategories = uniqueCategories.map((category) => {
     return (
@@ -47,6 +49,7 @@ export const Categories: React.FC<CategoriesProps> = ({
   return (
     <div className="flex flex-col justify-center content-center gap-3 ">
       <div className="md:flex md:flex-col md:items-center">
+        <p>Hi {kidName}</p>
         <h3>What do you like to play with? </h3>
         <p>Choose as many options as you like:</p>
       </div>

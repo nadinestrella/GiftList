@@ -1,9 +1,8 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import { Toy, Filters } from '@/types/toy';
 import { Login } from './components/Login';
-import { KidsWelcome } from './components/KidsWelcome';
 import { Categories } from './components/Categories';
 import { ListToy } from './components/ListToy';
 import { SelectedToys } from './components/SelectedToys';
@@ -37,9 +36,7 @@ export default function Home() {
 
   const onCateoriesChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const categoryClicked = event.target.value;
-
     const categoryClickedChecked = event.target.checked;
-
     const currentCategories = filters.categories;
 
     if (categoryClickedChecked) {
@@ -48,10 +45,8 @@ export default function Home() {
       const categoryClickedIndex = currentCategories.findIndex(
         (category) => category === categoryClicked
       );
-
       currentCategories.splice(categoryClickedIndex, 1);
     }
-
     setFilters({ age: filters.age, categories: currentCategories });
   };
 
@@ -99,20 +94,17 @@ export default function Home() {
           handleKidName={handleKidName}
           handleParentName={handleParentName}
           parentName={parentName}
-        />
-      </div>
-      <div>
-        <KidsWelcome
-          kidName={kidName}
-          handleKidAge={handleKidAge}
           kidAge={Number(filters.age)}
+          handleKidAge={handleKidAge}
         />
       </div>
+
       <div>
         <Categories
           uniqueCategories={uniqueCategories}
           onCateoriesChange={onCateoriesChange}
           selectedCategories={filters.categories}
+          kidName={kidName}
         />
       </div>
       <div>
