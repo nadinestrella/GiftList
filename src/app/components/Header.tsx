@@ -1,9 +1,12 @@
+import Link from 'next/link';
 import React from 'react';
 
 export const Header = () => {
   return (
-    <header className="text-background3 flex justify-center text-2xl md:text-3xl font-bold p-7">
-      <h1>Gift List 🎁 </h1>
+    <header className="bg-background3 text-white flex  items-center text-2xl font-bold h-14 px-4">
+      <h1 className="uppercase tracking-widest">
+        <Link href="/">🎁 Giftlist</Link>
+      </h1>
     </header>
   );
 };
