@@ -36,7 +36,6 @@ export const Categories: React.FC<CategoriesProps> = ({
           htmlFor={category}
         >
           <Image
-            className=""
             src={`/categories/${category}.png`}
             alt="categories"
             width={100}

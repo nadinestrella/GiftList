@@ -30,9 +30,12 @@ const config: Config = {
           '25%, 75%': { transform: 'scale(1.1)', opacity: '1' },
         },
       },
-      // Definimos la animación
       animation: {
         heartbeat: 'heartbeat 2s infinite',
+      },
+      objectPosition: {
+        'custom-1': '25% 75%', // X 25%, Y 75%
+        'custom-2': '65% 60%', // X 65%, Y 60%
       },
     },
   },

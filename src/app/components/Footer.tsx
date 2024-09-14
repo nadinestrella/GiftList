@@ -5,7 +5,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col justify-center items-center relative -bottom-9 text-white">
+    <footer className="flex flex-col justify-center items-center relative -bottom-9 text-background3">
       <p>By Nadine Estrella</p>
 
       <div className="flex flex-row justify-center gap-8">
