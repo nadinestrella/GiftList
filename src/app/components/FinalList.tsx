@@ -1,5 +1,6 @@
 import React from 'react';
 import { Toy } from '@/types/toy';
+import Image from 'next/image';
 
 interface FinalListProps {
   kidName: string;
@@ -28,8 +29,19 @@ export const FinalList: React.FC<FinalListProps> = ({
       <ol>
         {toysSelected.map((toy, index) => {
           return (
-            <li key={index} className="text-blue-700 pb-2">
-              <a href={toy.link} target="_blank">
+            <li key={index} className="text-blue-700 pb-5 flex flex-row gap-4">
+              <Image
+                src={toy.image}
+                height={100}
+                width={100}
+                alt="toy"
+                className="w-12 h-12 md:w-24 md:h-24 object-cover rounded-full  border-2 border-background3"
+              />
+              <a
+                href={toy.link}
+                target="_blank"
+                className="text-xs md:text-base"
+              >
                 {toy.model.length > 25
                   ? toy.model.slice(0, 50) + '...'
                   : toy.model}

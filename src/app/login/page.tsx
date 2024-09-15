@@ -14,6 +14,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import Slider from 'react-slick';
+import { StepperUI } from '../components/StepperUI';
+import { div } from 'framer-motion/client';
 
 export default function Home() {
   const [parentName, setparentName] = useState<string>('');
@@ -84,50 +86,55 @@ export default function Home() {
     slidesToScroll: 1,
   };
   return (
-    <Slider
-      className="  flex flex-col min-h-96 w-64 md:w-3/4 lg:w-tablet rounded-lg m-auto p-2  "
-      {...settings}
-    >
-      <div>
-        <Login
-          kidName={kidName}
-          handleKidName={handleKidName}
-          handleParentName={handleParentName}
-          parentName={parentName}
-          kidAge={Number(filters.age)}
-          handleKidAge={handleKidAge}
-        />
+    <div className="md:flex md:flex-row">
+      <div className="hidden md:inline">
+        <StepperUI />
       </div>
+      <Slider
+        className="  flex flex-col min-h-96 w-64 md:w-3/4 lg:w-tablet rounded-lg m-auto p-2  "
+        {...settings}
+      >
+        <div>
+          <Login
+            kidName={kidName}
+            handleKidName={handleKidName}
+            handleParentName={handleParentName}
+            parentName={parentName}
+            kidAge={Number(filters.age)}
+            handleKidAge={handleKidAge}
+          />
+        </div>
 
-      <div>
-        <Categories
-          uniqueCategories={uniqueCategories}
-          onCateoriesChange={onCateoriesChange}
-          selectedCategories={filters.categories}
-          kidName={kidName}
-        />
-      </div>
-      <div>
-        <ListToy
-          toys={toys as Toy[]}
-          kidName={kidName}
-          filters={filters}
-          toysSelected={toysSelected}
-          onToysChange={onToysChange}
-        />
-      </div>
-      <div>
-        <SelectedToys kidName={kidName} toysSelected={toysSelected} />
-      </div>
-      <div>
-        <FinalList
-          kidName={kidName}
-          parentName={parentName}
-          kidAge={Number(filters.age)}
-          toysSelected={toysSelected}
-        />
-      </div>
-    </Slider>
+        <div>
+          <Categories
+            uniqueCategories={uniqueCategories}
+            onCateoriesChange={onCateoriesChange}
+            selectedCategories={filters.categories}
+            kidName={kidName}
+          />
+        </div>
+        <div>
+          <ListToy
+            toys={toys as Toy[]}
+            kidName={kidName}
+            filters={filters}
+            toysSelected={toysSelected}
+            onToysChange={onToysChange}
+          />
+        </div>
+        <div>
+          <SelectedToys kidName={kidName} toysSelected={toysSelected} />
+        </div>
+        <div>
+          <FinalList
+            kidName={kidName}
+            parentName={parentName}
+            kidAge={Number(filters.age)}
+            toysSelected={toysSelected}
+          />
+        </div>
+      </Slider>
+    </div>
   );
 }
 

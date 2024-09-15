@@ -25,8 +25,8 @@ export const SelectedToys: React.FC<SelectedToysProps> = ({
                 <Image
                   className="w-full h-full object-cover rounded-full border-2 border-background3 overflow-hidden hover:scale-125"
                   src={toy.image}
-                  width={100}
-                  height={100}
+                  width={300}
+                  height={300}
                   alt={`toy" ${toy.brand}`}
                 />
               </a>
