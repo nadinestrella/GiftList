@@ -10,12 +10,7 @@ import { FinalList } from '../components/FinalList';
 import toys from '../toys.json';
 import objectToExport from '../services/localStorage';
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
-import Slider from 'react-slick';
 import { StepperUI } from '../components/StepperUI';
-import { div } from 'framer-motion/client';
 
 export default function Home() {
   const [parentName, setparentName] = useState<string>('');
@@ -78,22 +73,13 @@ export default function Home() {
     setFilters({ age: value, categories: filters.categories });
   };
 
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
   return (
     <div className="md:flex md:flex-row ">
-      <div className="hidden md:inline min-w-40 ml-11 mt-11 ">
-        <StepperUI />
-      </div>
-      <Slider
-        className="  flex flex-col w-64 md:w-3/5 lg:w-tablet rounded-lg m-auto"
-        {...settings}
-      >
+      <div>
+        <div className="hidden md:inline min-w-40 ml-11 mt-11 ">
+          <StepperUI />
+        </div>
+
         <div className="pt-11">
           <Login
             kidName={kidName}
@@ -133,7 +119,7 @@ export default function Home() {
             toysSelected={toysSelected}
           />
         </div>
-      </Slider>
+      </div>
     </div>
   );
 }

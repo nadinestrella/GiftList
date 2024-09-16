@@ -1,5 +1,6 @@
 import React, { ChangeEvent } from 'react';
 import { InputForm } from './ui/InputForm';
+import Image from 'next/image';
 
 interface LoginProps {
   kidName: string;
