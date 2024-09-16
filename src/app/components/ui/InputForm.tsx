@@ -26,7 +26,7 @@ export const InputForm = ({
         value={inputValue}
         onChange={onChange}
         type={type}
-        className="rounded-lg shadow-lg border-2 border-background3 p-1 pl-2 md:w-2/4 lg:w-3/4"
+        className="rounded-lg shadow-lg border-2 border-background3 p-1 pl-2  w-3/4 md:w-2/4 lg:w-3/4"
         required={required}
         maxLength={maxLength}
       ></input>
