@@ -43,7 +43,7 @@ export const ListToy: React.FC<ListToyProps> = ({
   }, [generateNewToysList]);
 
   return (
-    <div className="flex flex-col justify-center items-center content-center gap-4 p-5">
+    <div className="flex flex-col justify-center items-center content-center gap-4">
       <div className="md:flex md:flex-col md:items-start">
         <p className="font-semibold pb-2">{kidName},</p>
         <p>These are what we found for you!!</p>

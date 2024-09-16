@@ -33,6 +33,7 @@ export const StepperUI = () => {
       orientation="vertical"
       height="400px"
       gap="0"
+      size="sm"
     >
       {steps.map((step, index) => (
         <Step key={index}>

@@ -16,7 +16,7 @@ export const FinalList: React.FC<FinalListProps> = ({
   toysSelected,
 }) => {
   return (
-    <div className="flex flex-col justify-center items-center content-center gap-4 p-4">
+    <div className="flex flex-col justify-center items-center content-center gap-4">
       <p className="p-1">
         <strong>{parentName}</strong>, these are the <strong>{kidName}</strong>{' '}
         selection according to their age:

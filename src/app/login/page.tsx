@@ -86,15 +86,15 @@ export default function Home() {
     slidesToScroll: 1,
   };
   return (
-    <div className="md:flex md:flex-row">
-      <div className="hidden md:inline">
+    <div className="md:flex md:flex-row ">
+      <div className="hidden md:inline min-w-40 ml-11 mt-11 ">
         <StepperUI />
       </div>
       <Slider
-        className="  flex flex-col min-h-96 w-64 md:w-3/4 lg:w-tablet rounded-lg m-auto p-2  "
+        className="  flex flex-col w-64 md:w-3/5 lg:w-tablet rounded-lg m-auto"
         {...settings}
       >
-        <div>
+        <div className="pt-11">
           <Login
             kidName={kidName}
             handleKidName={handleKidName}
@@ -105,7 +105,7 @@ export default function Home() {
           />
         </div>
 
-        <div>
+        <div className="pt-11">
           <Categories
             uniqueCategories={uniqueCategories}
             onCateoriesChange={onCateoriesChange}
@@ -113,7 +113,7 @@ export default function Home() {
             kidName={kidName}
           />
         </div>
-        <div>
+        <div className="pt-11">
           <ListToy
             toys={toys as Toy[]}
             kidName={kidName}
@@ -122,10 +122,10 @@ export default function Home() {
             onToysChange={onToysChange}
           />
         </div>
-        <div>
+        <div className="pt-11">
           <SelectedToys kidName={kidName} toysSelected={toysSelected} />
         </div>
-        <div>
+        <div className="pt-11">
           <FinalList
             kidName={kidName}
             parentName={parentName}

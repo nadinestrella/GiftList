@@ -12,7 +12,7 @@ export const SelectedToys: React.FC<SelectedToysProps> = ({
   toysSelected,
 }) => {
   return (
-    <div className="flex flex-col  items-center content-center gap-4">
+    <div className="flex flex-col items-center content-center gap-4">
       <div>
         <p className="font-semibold pb-2">Congratulations {kidName}!! </p>
         <p> You have choosen these {toysSelected.length} toys!!</p>

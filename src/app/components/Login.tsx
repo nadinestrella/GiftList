@@ -25,11 +25,8 @@ export const Login: React.FC<LoginProps> = ({
   };
 
   return (
-    <div className="flex flex-col justify-center items-center content-center gap-4">
-      <h3 className="text-lg pt-3 text-background3 font-semibold">
-        Welcome to My Gift List
-      </h3>
-      <form className="flex flex-col justify-center content-center gap-4">
+    <div className="flex flex-col  justify-center  gap-4 md:pl-14 ">
+      <form className="flex flex-col gap-4  ">
         <InputForm
           title="What is your name? 😀"
           inputValue={parentName || ''}

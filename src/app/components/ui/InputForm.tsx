@@ -19,17 +19,17 @@ export const InputForm = ({
   maxLength,
 }: InputFormProps) => {
   return (
-    <>
-      <label>{title}</label>
+    <div className="flex flex-col lg:flex-row lg:items-center gap-4 pb-3">
+      <label className="lg:w-3/4">{title}</label>
       <input
         placeholder={placeholder}
         value={inputValue}
         onChange={onChange}
         type={type}
-        className="rounded-full border-2 border-background3 p-1 pl-2"
+        className="rounded-lg shadow-lg border-2 border-background3 p-1 pl-2 md:w-2/4 lg:w-3/4"
         required={required}
         maxLength={maxLength}
       ></input>
-    </>
+    </div>
   );
 };
