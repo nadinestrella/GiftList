@@ -20,15 +20,10 @@ const steps = [
   { title: 'Fifth', description: 'Final List' },
 ];
 
-export const StepperUI = () => {
-  const { activeStep } = useSteps({
-    index: 1,
-    count: steps.length,
-  });
-
+export const StepperUI = ({ step }: { step: number }) => {
   return (
     <Stepper
-      index={activeStep}
+      index={step}
       colorScheme="red"
       orientation="vertical"
       height="400px"

@@ -11,8 +11,15 @@ import toys from '../toys.json';
 import objectToExport from '../services/localStorage';
 
 import { StepperUI } from '../components/StepperUI';
+import { StepNavigation } from '../components/ui/StepNavigation';
+import { useSteps } from '@chakra-ui/stepper';
 
 export default function Home() {
+  const { activeStep, goToNext, goToPrevious } = useSteps({
+    index: 1,
+    count: 4,
+  });
+
   const [parentName, setparentName] = useState<string>('');
   const [kidName, setKidName] = useState<string>('');
   const [filters, setFilters] = useState<Filters>({ age: '', categories: [] });
@@ -74,51 +81,57 @@ export default function Home() {
   };
 
   return (
-    <div className="md:flex md:flex-row ">
+    <div className="md:flex md:flex-row">
       <div>
         <div className="hidden md:inline min-w-40 ml-11 mt-11 ">
-          <StepperUI />
+          <StepperUI step={activeStep} />
         </div>
 
         <div className="pt-11">
-          <Login
-            kidName={kidName}
-            handleKidName={handleKidName}
-            handleParentName={handleParentName}
-            parentName={parentName}
-            kidAge={Number(filters.age)}
-            handleKidAge={handleKidAge}
-          />
+          {activeStep === 0 ? (
+            <Login
+              kidName={kidName}
+              handleKidName={handleKidName}
+              handleParentName={handleParentName}
+              parentName={parentName}
+              kidAge={Number(filters.age)}
+              handleKidAge={handleKidAge}
+            />
+          ) : null}
+          {activeStep === 1 ? (
+            <Categories
+              uniqueCategories={uniqueCategories}
+              onCateoriesChange={onCateoriesChange}
+              selectedCategories={filters.categories}
+              kidName={kidName}
+            />
+          ) : null}
+          {activeStep === 2 ? (
+            <ListToy
+              toys={toys as Toy[]}
+              kidName={kidName}
+              filters={filters}
+              toysSelected={toysSelected}
+              onToysChange={onToysChange}
+            />
+          ) : null}
+          {activeStep === 3 ? (
+            <SelectedToys kidName={kidName} toysSelected={toysSelected} />
+          ) : null}
+          {activeStep === 4 ? (
+            <FinalList
+              kidName={kidName}
+              parentName={parentName}
+              kidAge={Number(filters.age)}
+              toysSelected={toysSelected}
+            />
+          ) : null}
         </div>
-
-        <div className="pt-11">
-          <Categories
-            uniqueCategories={uniqueCategories}
-            onCateoriesChange={onCateoriesChange}
-            selectedCategories={filters.categories}
-            kidName={kidName}
-          />
-        </div>
-        <div className="pt-11">
-          <ListToy
-            toys={toys as Toy[]}
-            kidName={kidName}
-            filters={filters}
-            toysSelected={toysSelected}
-            onToysChange={onToysChange}
-          />
-        </div>
-        <div className="pt-11">
-          <SelectedToys kidName={kidName} toysSelected={toysSelected} />
-        </div>
-        <div className="pt-11">
-          <FinalList
-            kidName={kidName}
-            parentName={parentName}
-            kidAge={Number(filters.age)}
-            toysSelected={toysSelected}
-          />
-        </div>
+        <StepNavigation
+          step={activeStep}
+          goToNext={goToNext}
+          goToPrevious={goToPrevious}
+        />
       </div>
     </div>
   );
