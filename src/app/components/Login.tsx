@@ -26,8 +26,8 @@ export const Login: React.FC<LoginProps> = ({
   };
 
   return (
-    <div className="flex flex-col items-center justify-center  gap-4 md:pl-14 ">
-      <form className="flex flex-col gap-4  ">
+    <div className="flex flex-col items-center justify-center  gap-4 md:pl-14">
+      <form className="flex flex-col gap-4">
         <InputForm
           title="What is your name? 😀"
           inputValue={parentName || ''}

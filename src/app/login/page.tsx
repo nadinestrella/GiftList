@@ -82,55 +82,56 @@ export default function Home() {
 
   return (
     <div className="md:flex md:flex-row">
-      <div className="hidden md:inline min-w-40 ml-11 mt-11 ">
+      <div className="hidden md:inline min-w-40 ml-14 mt-11 ">
         <StepperUI step={activeStep} />
       </div>
-
-      <div className="pt-11">
-        {activeStep === 1 ? (
-          <Login
-            kidName={kidName}
-            handleKidName={handleKidName}
-            handleParentName={handleParentName}
-            parentName={parentName}
-            kidAge={Number(filters.age)}
-            handleKidAge={handleKidAge}
-          />
-        ) : null}
-        {activeStep === 2 ? (
-          <Categories
-            uniqueCategories={uniqueCategories}
-            onCateoriesChange={onCateoriesChange}
-            selectedCategories={filters.categories}
-            kidName={kidName}
-          />
-        ) : null}
-        {activeStep === 3 ? (
-          <ListToy
-            toys={toys as Toy[]}
-            kidName={kidName}
-            filters={filters}
-            toysSelected={toysSelected}
-            onToysChange={onToysChange}
-          />
-        ) : null}
-        {activeStep === 4 ? (
-          <SelectedToys kidName={kidName} toysSelected={toysSelected} />
-        ) : null}
-        {activeStep === 5 ? (
-          <FinalList
-            kidName={kidName}
-            parentName={parentName}
-            kidAge={Number(filters.age)}
-            toysSelected={toysSelected}
-          />
-        ) : null}
+      <div className="md:ml-14 lg:ml-24">
+        <div className="pt-11">
+          {activeStep === 1 ? (
+            <Login
+              kidName={kidName}
+              handleKidName={handleKidName}
+              handleParentName={handleParentName}
+              parentName={parentName}
+              kidAge={Number(filters.age)}
+              handleKidAge={handleKidAge}
+            />
+          ) : null}
+          {activeStep === 2 ? (
+            <Categories
+              uniqueCategories={uniqueCategories}
+              onCateoriesChange={onCateoriesChange}
+              selectedCategories={filters.categories}
+              kidName={kidName}
+            />
+          ) : null}
+          {activeStep === 3 ? (
+            <ListToy
+              toys={toys as Toy[]}
+              kidName={kidName}
+              filters={filters}
+              toysSelected={toysSelected}
+              onToysChange={onToysChange}
+            />
+          ) : null}
+          {activeStep === 4 ? (
+            <SelectedToys kidName={kidName} toysSelected={toysSelected} />
+          ) : null}
+          {activeStep === 5 ? (
+            <FinalList
+              kidName={kidName}
+              parentName={parentName}
+              kidAge={Number(filters.age)}
+              toysSelected={toysSelected}
+            />
+          ) : null}
+        </div>
+        <StepNavigation
+          step={activeStep}
+          goToNext={goToNext}
+          goToPrevious={goToPrevious}
+        />
       </div>
-      <StepNavigation
-        step={activeStep}
-        goToNext={goToNext}
-        goToPrevious={goToPrevious}
-      />
     </div>
   );
 }
