@@ -12,7 +12,7 @@ export const StepNavigation = ({
   goToPrevious: () => void;
 }) => {
   return (
-    <div className="flex flex-row justify-around pt-11 text-3xl text-background3">
+    <div className="flex flex-row justify-around pt-11 text-3xl text-background3 pb-4">
       <button onClick={goToPrevious} className="hover:text-red-600">
         <FontAwesomeIcon icon={faArrowLeft} />
       </button>
