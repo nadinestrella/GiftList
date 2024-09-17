@@ -17,7 +17,7 @@ import { PageLayout } from '../components/PageLayout';
 
 export default function Home() {
   const { activeStep, goToNext, goToPrevious } = useSteps({
-    index: 1,
+    index: 0,
     count: 4,
   });
 
@@ -86,7 +86,7 @@ export default function Home() {
       sidebar={<StepperUI step={activeStep} />}
       content={
         <div className="pt-11">
-          {activeStep === 1 ? (
+          {activeStep === 0 ? (
             <Login
               kidName={kidName}
               handleKidName={handleKidName}
@@ -96,7 +96,7 @@ export default function Home() {
               handleKidAge={handleKidAge}
             />
           ) : null}
-          {activeStep === 2 ? (
+          {activeStep === 1 ? (
             <Categories
               uniqueCategories={uniqueCategories}
               onCateoriesChange={onCateoriesChange}
@@ -104,7 +104,7 @@ export default function Home() {
               kidName={kidName}
             />
           ) : null}
-          {activeStep === 3 ? (
+          {activeStep === 2 ? (
             <ListToy
               toys={toys as Toy[]}
               kidName={kidName}
@@ -113,10 +113,10 @@ export default function Home() {
               onToysChange={onToysChange}
             />
           ) : null}
-          {activeStep === 4 ? (
+          {activeStep === 3 ? (
             <SelectedToys kidName={kidName} toysSelected={toysSelected} />
           ) : null}
-          {activeStep === 5 ? (
+          {activeStep === 4 ? (
             <FinalList
               kidName={kidName}
               parentName={parentName}

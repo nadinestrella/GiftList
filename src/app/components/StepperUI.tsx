@@ -21,9 +21,10 @@ const steps = [
 ];
 
 export const StepperUI = ({ step }: { step: number }) => {
+  console.log('Current Step', step);
   return (
     <Stepper
-      index={step - 1}
+      index={step}
       colorScheme="red"
       orientation="vertical"
       height="400px"
