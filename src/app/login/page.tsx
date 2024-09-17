@@ -13,6 +13,7 @@ import objectToExport from '../services/localStorage';
 import { StepperUI } from '../components/StepperUI';
 import { StepNavigation } from '../components/ui/StepNavigation';
 import { useSteps } from '@chakra-ui/stepper';
+import { PageLayout } from '../components/PageLayout';
 
 export default function Home() {
   const { activeStep, goToNext, goToPrevious } = useSteps({
@@ -81,11 +82,11 @@ export default function Home() {
   };
 
   return (
-    <div className="md:flex md:flex-row">
-      <div className="hidden md:inline min-w-40 ml-14 mt-11 ">
-        <StepperUI step={activeStep} />
-      </div>
-      <div className="md:ml-14 lg:ml-24">
+    <PageLayout
+      sidebar={
+        <StepperUI step={activeStep} /> // Cerramos el componente correctamente
+      }
+      content={
         <div className="pt-11">
           {activeStep === 1 ? (
             <Login
@@ -126,13 +127,15 @@ export default function Home() {
             />
           ) : null}
         </div>
+      }
+      navigation={
         <StepNavigation
           step={activeStep}
           goToNext={goToNext}
           goToPrevious={goToPrevious}
         />
-      </div>
-    </div>
+      }
+    />
   );
 }
 
