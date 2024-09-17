@@ -83,9 +83,7 @@ export default function Home() {
 
   return (
     <PageLayout
-      sidebar={
-        <StepperUI step={activeStep} /> // Cerramos el componente correctamente
-      }
+      sidebar={<StepperUI step={activeStep} />}
       content={
         <div className="pt-11">
           {activeStep === 1 ? (

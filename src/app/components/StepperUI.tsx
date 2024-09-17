@@ -23,7 +23,7 @@ const steps = [
 export const StepperUI = ({ step }: { step: number }) => {
   return (
     <Stepper
-      index={step}
+      index={step - 1}
       colorScheme="red"
       orientation="vertical"
       height="400px"
