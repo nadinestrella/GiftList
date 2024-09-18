@@ -86,9 +86,8 @@ export const Login: React.FC<{
         >
           {errors.kidAge?.message || ' '}
         </span>
-        <div>
-          <button type="submit">Next </button>
-        </div>
+
+        <button type="submit">Next </button>
       </form>
     </div>
   );

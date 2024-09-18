@@ -24,11 +24,11 @@ export default function Home() {
 
   // const [parentName, setparentName] = useState<string>('');
   // const [kidName, setKidName] = useState<string>('');
-  const [filters, setFilters] = useState<Filters>({ age: '', categories: [] });
+  // const [filters, setFilters] = useState<Filters>({ age: '', categories: [] });
   const [toysSelected, setToysSelected] = useState<Toy[]>([]);
 
-  const categories = toys.map((toy) => toy.category);
-  const uniqueCategories = [...new Set(categories)];
+  // const categories = toys.map((toy) => toy.category);
+  // const uniqueCategories = [...new Set(categories)];
 
   // const handleKidName = (value: string) => {
   //   setKidName(value);
@@ -40,21 +40,21 @@ export default function Home() {
   //   objectToExport.setInLocalStorage('parentName', value);
   // };
 
-  const onCateoriesChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const categoryClicked = event.target.value;
-    const categoryClickedChecked = event.target.checked;
-    const currentCategories = filters.categories;
+  // const onCateoriesChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   const categoryClicked = event.target.value;
+  //   const categoryClickedChecked = event.target.checked;
+  //   const currentCategories = filters.categories;
 
-    if (categoryClickedChecked) {
-      currentCategories.push(categoryClicked);
-    } else {
-      const categoryClickedIndex = currentCategories.findIndex(
-        (category) => category === categoryClicked
-      );
-      currentCategories.splice(categoryClickedIndex, 1);
-    }
-    setFilters({ age: filters.age, categories: currentCategories });
-  };
+  //   if (categoryClickedChecked) {
+  //     currentCategories.push(categoryClicked);
+  //   } else {
+  //     const categoryClickedIndex = currentCategories.findIndex(
+  //       (category) => category === categoryClicked
+  //     );
+  //     currentCategories.splice(categoryClickedIndex, 1);
+  //   }
+  //   setFilters({ age: filters.age, categories: currentCategories });
+  // };
 
   const onToysChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const toyClicked = toys.find(
@@ -78,9 +78,9 @@ export default function Home() {
     setToysSelected(currentToys);
   };
 
-  const handleKidAge = (value: string) => {
-    setFilters({ age: value, categories: filters.categories });
-  };
+  // const handleKidAge = (value: string) => {
+  //   setFilters({ age: value, categories: filters.categories });
+  // };
 
   return (
     <PageLayout
@@ -91,9 +91,11 @@ export default function Home() {
             {activeStep === 0 ? <Login goToNext={goToNext} /> : null}
             {activeStep === 1 ? (
               <Categories
-                uniqueCategories={uniqueCategories}
-                onCateoriesChange={onCateoriesChange}
-                selectedCategories={filters.categories}
+                goToNext={goToNext}
+                goToPrevious={goToPrevious}
+                // uniqueCategories={uniqueCategories}
+                // onCateoriesChange={onCateoriesChange}
+                // selectedCategories={filters.categories}
                 // kidName={kidName}
               />
             ) : null}
