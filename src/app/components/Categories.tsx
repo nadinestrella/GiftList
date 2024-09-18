@@ -1,4 +1,6 @@
 import React from 'react';
+import { InputForm } from './ui/InputForm';
+import { useForm, SubmitHandler } from 'react-hook-form';
 
 import Image from 'next/image';
 

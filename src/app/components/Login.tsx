@@ -1,16 +1,7 @@
 import React, { ChangeEvent } from 'react';
 import { InputForm } from './ui/InputForm';
 import { useForm, SubmitHandler } from 'react-hook-form';
-
-// interface LoginProps {
-//   kidName: string;
-//   handleKidName: (value: string) => void;
-//   handleParentName: (value: string) => void;
-//   parentName: string;
-//   handleParentEmail?: (value: string) => void;
-//   kidAge: number;
-//   handleKidAge: (value: string) => void;
-// }
+import { useUser } from '../context/UseContext';
 
 interface IFormInput {
   parentName: string;
@@ -18,14 +9,20 @@ interface IFormInput {
   kidAge: number;
 }
 
-export const Login: React.FC = () => {
+export const Login: React.FC<{
+  goToNext: () => void;
+}> = ({ goToNext }) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<IFormInput>();
+  const { updateData } = useUser();
 
-  const onSubmit: SubmitHandler<IFormInput> = (data: any) => console.log(data);
+  const onSubmit: SubmitHandler<IFormInput> = (data: any) => {
+    updateData(data);
+    goToNext();
+  };
 
   return (
     <div className="flex flex-col items-center justify-center  gap-4 md:pl-14">
@@ -44,7 +41,7 @@ export const Login: React.FC = () => {
         />
 
         <span
-          className={`text-red-600 text-xs ${
+          className={`text-red-600 text-xs lg:text-right ${
             errors.parentName ? 'visible' : 'invisible'
           }`}
         >
@@ -64,7 +61,7 @@ export const Login: React.FC = () => {
           })}
         />
         <span
-          className={`text-red-600 text-xs ${
+          className={`text-red-600 text-xs lg:text-right ${
             errors.kidName ? 'visible' : 'invisible'
           }`}
         >
@@ -83,13 +80,15 @@ export const Login: React.FC = () => {
           type="number"
         />
         <span
-          className={`text-red-600 text-xs ${
+          className={`text-red-600 text-xs lg:text-right ${
             errors.kidAge ? 'visible' : 'invisible'
           }`}
         >
           {errors.kidAge?.message || ' '}
         </span>
-        <button type="submit">Add</button>
+        <div>
+          <button type="submit">Next </button>
+        </div>
       </form>
     </div>
   );

@@ -1,6 +1,6 @@
 const setInLocalStorage = (key: string, value: any) => {
   const stringifyData = JSON.stringify(value);
-  localStorage.setItem('data', stringifyData);
+  localStorage.setItem(key, stringifyData);
 };
 
 const getFromLocalStorage = (key: string, defaultValue: any) => {
