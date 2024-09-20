@@ -102,8 +102,7 @@ export default function Home() {
             {activeStep === 2 ? (
               <ListToy
                 toys={toys as Toy[]}
-                kidName={kidName}
-                filters={filters}
+                // filters={filters}
                 toysSelected={toysSelected}
                 onToysChange={onToysChange}
               />

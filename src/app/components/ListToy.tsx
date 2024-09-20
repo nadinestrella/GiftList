@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Filters, Toy } from '@/types/toy';
+import { useForm, SubmitHandler } from 'react-hook-form';
 
 interface ListToyProps {
-  kidName: string;
   toys: Toy[];
   filters: Filters;
   toysSelected: Toy[];
@@ -11,13 +11,17 @@ interface ListToyProps {
 }
 
 export const ListToy: React.FC<ListToyProps> = ({
-  kidName,
   toys,
   filters,
   toysSelected,
   onToysChange,
 }) => {
   const [toysList, setToysList] = useState<Toy[]>(toys);
+
+  const onSubmit: SubmitHandler<IFormInput> = (data: any) => {
+    updateData(data);
+    goToNext();
+  };
 
   const generateNewToysList = useCallback(() => {
     //filtra por cat y edad
@@ -49,7 +53,7 @@ export const ListToy: React.FC<ListToyProps> = ({
         <p>These are what we found for you!!</p>
         <p>Select the toys you like the most: </p>
       </div>
-      <div>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <ul className="p-1 grid grid-cols-2 gap-9 md:grid-cols-3 md:gap-12">
           {toysList.map((toy, index) => {
             return (
@@ -88,7 +92,11 @@ export const ListToy: React.FC<ListToyProps> = ({
             );
           })}
         </ul>
-      </div>
+        <div>
+          <button onClick={goToPrevious}>Previous</button>
+          <button type="submit">Next </button>
+        </div>
+      </form>
       <div>
         <p className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
           Any match?{' '}
