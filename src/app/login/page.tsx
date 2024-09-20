@@ -25,7 +25,7 @@ export default function Home() {
   // const [parentName, setparentName] = useState<string>('');
   // const [kidName, setKidName] = useState<string>('');
   // const [filters, setFilters] = useState<Filters>({ age: '', categories: [] });
-  const [toysSelected, setToysSelected] = useState<Toy[]>([]);
+  // const [toysSelected, setToysSelected] = useState<Toy[]>([]);
 
   // const categories = toys.map((toy) => toy.category);
   // const uniqueCategories = [...new Set(categories)];
@@ -56,28 +56,6 @@ export default function Home() {
   //   setFilters({ age: filters.age, categories: currentCategories });
   // };
 
-  const onToysChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const toyClicked = toys.find(
-      (toy) => toy.id === Number(event.target.value)
-    );
-
-    const toyClickedChecked = event.target.checked;
-
-    const currentToys = [...toysSelected];
-
-    if (toyClickedChecked) {
-      currentToys.push(toyClicked as Toy);
-    } else {
-      const toyClickedIndex = currentToys.findIndex(
-        (toy) => toy.id === (toyClicked as Toy).id
-      );
-
-      currentToys.splice(toyClickedIndex, 1);
-    }
-
-    setToysSelected(currentToys);
-  };
-
   // const handleKidAge = (value: string) => {
   //   setFilters({ age: value, categories: filters.categories });
   // };
@@ -90,21 +68,16 @@ export default function Home() {
           <div className="pt-11">
             {activeStep === 0 ? <Login goToNext={goToNext} /> : null}
             {activeStep === 1 ? (
-              <Categories
-                goToNext={goToNext}
-                goToPrevious={goToPrevious}
-                // uniqueCategories={uniqueCategories}
-                // onCateoriesChange={onCateoriesChange}
-                // selectedCategories={filters.categories}
-                // kidName={kidName}
-              />
+              <Categories goToNext={goToNext} goToPrevious={goToPrevious} />
             ) : null}
             {activeStep === 2 ? (
               <ListToy
-                toys={toys as Toy[]}
+                goToNext={goToNext}
+                goToPrevious={goToPrevious}
+                // toys={toys as Toy[]}
                 // filters={filters}
-                toysSelected={toysSelected}
-                onToysChange={onToysChange}
+                // toysSelected={toysSelected}
+                // onToysChange={onToysChange}
               />
             ) : null}
             {activeStep === 3 ? (

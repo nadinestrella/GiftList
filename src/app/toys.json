@@ -143,7 +143,7 @@
     "brand": "NENUCO",
     "category": "babies",
     "model": "Muñeco ¿Estás malito?",
-    "age": "3",
+    "age": 3,
     "price": "39.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDIzMTI4fGltYWdlL2pwZWd8YUdNNUwyZzRPUzh4TVRFMk56ZzFOamd5TURJMU5BfDk2ZDc5MDZmZjc2YWJiYWE0NDZlZDdmOWRmYjBmYmFmZWRjNDUxNjEyMTNkMTE2MDZkZGM1YzBkOTEyYjcxZTQ",
     "link": "https://www.toysrus.es/Nenuco-Mu%C3%B1eco-%C2%BFEst%C3%A1s-malito%3F/p/K1030819"
@@ -154,7 +154,7 @@
     "brand": "NENUCO",
     "category": "babies",
     "model": "La cuna que te ayuda",
-    "age": "1",
+    "age": 1,
     "price": "74.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDMwMzc4fGltYWdlL2pwZWd8YURCa0wyaG1ZUzh4TWpFNU1qWTROVGd4TnpnNE5nfDIzYWU1ZDNlOWFhMjFhZmQyYzUzZjIzNDIwNmRkMWI2ZDA0ZGFlNTMzODFmOTdmM2NlMTIwNzA2YmRjN2I3M2Y",
     "link": "https://www.toysrus.es/Nenuco-La-cuna-que-te-ayuda/p/K1041056"
@@ -164,7 +164,7 @@
     "brand": "BARBIE",
     "category": "barbies",
     "model": "Pack muñeca con mascotas",
-    "age": "3",
+    "age": 3,
     "price": "29.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDE4NDAyfGltYWdlL2pwZWd8YURFeEwyaG1OUzh4TWpBeE1EUXlNVGczT0RneE5BfDkwODhmYWE5ZmM3MWFmMGNkNTAzMzFlNTMxMjgyMmJiZjBhZjE0NmI3OThlYzQwMzNlNWE1OGQ0YWJhMmZkNzQ",
     "link": "https://www.toysrus.es/Barbie-Pack-mu%C3%B1eca-con-mascotas/p/K1036814"
@@ -174,7 +174,7 @@
     "brand": "BARBIE",
     "category": "barbies",
     "model": "Pediatra - Muñeca Yo Quiero Ser",
-    "age": "3",
+    "age": 3,
     "price": "24.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDE3NTg2fGltYWdlL2pwZWd8YUdOakwyZzJZUzh4TWpJeE5ETXlPRFl5TXpFek5BfGJhZjQwY2MyZTJmZjg0ZmYxY2EwOGMzNjI1ZjQ1OTc4ZTc4ZTRlODMxMGQ5MTY4MTRhYzk1YzVhZjc4ODhkNGY",
     "link": "https://www.toysrus.es/Barbie-Pediatra-Mu%C3%B1eca-Yo-Quiero-Ser/p/K1041431"
@@ -184,7 +184,7 @@
     "brand": "BARBIE",
     "category": "barbies",
     "model": "Supermercado",
-    "age": "3",
+    "age": 3,
     "price": "44.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDM0MDY4fGltYWdlL2pwZWd8YURaaUwyZzBaUzg1TXpVNE16RTJOVFk0TmpBMnxmYTRkZjBmNDFlZmJkZGYyNTY2MmQ2NWQ0Nzk5ZGY3MzA5MzM1OTJhOTdiZTNhYjViMGRhMTVhMjAzYzRhMTM5",
     "link": "https://www.toysrus.es/Barbie-Supermercado/p/K960783"
@@ -194,7 +194,7 @@
     "brand": "BARBIE",
     "category": "barbies",
     "model": "Muñeca Barbie y restaurante Cook´n Grill",
-    "age": "3",
+    "age": 3,
     "price": "79.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDM4NjYwfGltYWdlL2pwZWd8YUdFMkwyaGxOaTh4TVRNNE16RTFNelkxTlRnek9BfDYzMmZjNTMwZjU4YzA5YzhjNjQyZmMxMjk0YmJkMmM3ZWE5OTcwNzQ3ZjNjMWZhMGY3MWViNzc1ZjJjMGVkMDQ",
     "link": "https://www.toysrus.es/Barbie-Mu%C3%B1eca-Barbie-y-restaurante-Cook%C2%B4n-Grill/p/K1031260"
@@ -204,7 +204,7 @@
     "brand": "PLAY-DOH",
     "category": "play-doh",
     "model": "Pack 20 Botes",
-    "age": "3",
+    "age": 3,
     "price": "17.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDQ3NjQwfGltYWdlL2pwZWd8YURVNEwyZ3hZUzg0T0RreU16SXhOekkyTkRrMHwzNTBjZDYzMjA1NjE1Y2QxMTA5MmQ2YWZkZTNiM2EzNzk4ZGQ5NDZiZGNmNWNjMDVmY2EwZTQxM2E4ZmE3N2Zl",
     "link": "https://www.toysrus.es/Play-Doh-Pack-20-Botes/p/K13579"
@@ -214,7 +214,7 @@
     "brand": "PLAY-DOH",
     "category": "play-doh",
     "model": "Kit veterinario",
-    "age": "3",
+    "age": 3,
     "price": "24.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDU0Mjg5fGltYWdlL2pwZWd8YURBMkwyZ3dPUzh4TVRnNU1qUXdPRGd4TVRVMU1BfDhkZDY1YjBlNDdjNjc2OTFlMzNiMDE5MTExYThkNmZjZTcxMmQ3ZDdkNDUyY2ViNGFlNDc3YjQ5MTNjOWIxN2Y",
     "link": "https://www.toysrus.es/Play-Doh-Kit-veterinario/p/K1036673"
@@ -224,7 +224,7 @@
     "brand": "PLAY-DOH",
     "category": "play-doh",
     "model": "Rex el dino glotón",
-    "age": "3",
+    "age": 3,
     "price": "23.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDM1ODQ5fGltYWdlL2pwZWd8YURBNEwyZ3daaTh4TURreE9ERTRNREk1TURVNU1BfDc0NDQ5YWY5ZjUwMmEwYzQ0NWMxMjk5NWVmZGFkZDRmNGVmYzEzYWRlY2M4YTZkZTViZjIxNmM0ODM1ZWNjYjI",
     "link": "https://www.toysrus.es/Play-Doh-Rex-el-dino-glot%C3%B3n/p/K1026194"
@@ -234,7 +234,7 @@
     "brand": "PLAYMOBIL",
     "category": "playmobil",
     "model": "Playmobil 1.2.3 - Granja Maletín",
-    "age": "3",
+    "age": 3,
     "price": "39.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDM5NTgzfGltYWdlL2pwZWd8YUdRNUwyZzJaaTg0TnprNE16azNNRGN4TXprd3xiM2U5NmZkOWI1MzQ5NTNhOTc5MzM2YWYxZDA0M2IzNmFhOWM1MmQyOGVhZDE5Y2I4Y2I0NGM5MjJmYjNlNTcz",
     "link": "https://www.toysrus.es/Playmobil-1-2-3-Granja-Malet%C3%ADn-6962/p/K367214"
@@ -244,7 +244,7 @@
     "brand": "PLAYMOBIL",
     "category": "playmobil",
     "model": "Helicóptero de policía: persecución del vehículo huido",
-    "age": "5",
+    "age": 5,
     "price": "64.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDU5MTAzfGltYWdlL2pwZWd8YURVeUwyZ3haUzh4TURnek16UTFNVEk0TmpVMU9BfGViODRkYTE5OGVkZWMyMWViY2FhNzMxOWE5MGI5NGQ4Mjk2MzQ3ZWNjODNmMGViOTMwOTVlYTkwMTZjYzc4YzU",
     "link": "https://www.toysrus.es/Playmobil-Helic%C3%B3ptero-de-polic%C3%ADa%3A-persecuci%C3%B3n-del-veh%C3%ADculo-huido-70575/p/K1025688"
@@ -254,7 +254,7 @@
     "brand": "PLAYMOBIL",
     "category": "playmobil",
     "model": "Casa de campo y animales de granja Playmobil Country",
-    "age": "3",
+    "age": 3,
     "price": "59.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDUyOTE1fGltYWdlL2pwZWd8YUdJM0wyaGxOeTh4TWpjMU16VXdOVFU0TXpFek5BfDIyZjM5ZWMxZWIxZWQ0YTJmYzAxYzM1MjJlZTNmM2RkNTZjMGY5MWEwOTBjMzVjMzEyNDhmNmJkYzJmNWJlZGI",
     "link": "https://www.toysrus.es/Playmobil-Casa-de-campo-y-animales-de-granja-Playmobil-Country-%E3%85%A4/p/K1048335"
@@ -264,7 +264,7 @@
     "brand": "PLAYMOBIL",
     "category": "playmobil",
     "model": "Playmobil City Life: Abuelos y Nieto, Set",
-    "age": "3",
+    "age": 3,
     "price": "11.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDQ5NDgxfGltYWdlL2pwZWd8YURKaEwyaGhNeTh4TWpjM016STNPREk0TlRnMU5BfDMzZGQ1MDg4ZGY3ZDdkMmE3NWI0MTRhM2EzYWMxYjk5Nzg0Y2NmZWNhN2EzOWY4OGI5NThlZjllY2UyYWYxODY",
     "link": "https://www.toysrus.es/Playmobil-Playmobil-City-Life%3A-Abuelos-y-Nieto%2C-Set-70990-%E3%85%A4/p/K1048304"
@@ -274,7 +274,7 @@
     "brand": "CLEMENTONI",
     "category": "puzzle",
     "model": "Patrulla Canina - Puzzle infantil progresivo 10 en 1 de la Patrulla Canina",
-    "age": "3",
+    "age": 3,
     "price": "17.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDYyMDI4fGltYWdlL2pwZWd8YURNeEwyaG1OaTh4TWprek16Z3dOemd6TXpFeE9BfDlkMzdkZWVlNTMyY2RhMGI3MWNmMDEzODI4Y2MyM2FkNjFkNjAyNmNlOWY2Y2FlYTQ2YzdkYzg5NWU1YWUxOTk",
     "link": "https://www.toysrus.es/Clementoni-Patrulla-Canina-Puzzle-infantil-progresivo-10-en-1-de-la-Patrulla-Canina-%E3%85%A4/p/K1046806"
@@ -284,7 +284,7 @@
     "brand": "EDUCA BORRAS",
     "category": "puzzle",
     "model": "Los Vengadores - Puzzle 2x48 Piezas",
-    "age": "3",
+    "age": 3,
     "price": "11.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDU5ODUzfGltYWdlL2pwZWd8YURCbEwyZ3hZeTg0T0RrMk5ERTJOREUxTnpjMHw2MjUyMjFmODEyYzVlOTk2OWZlNjY5Mzk0N2M4OTc5ZjExNjg1NTFlNzUzZDM3NzRjZTkyYzVmYWNiMmNhNGM3",
     "link": "https://www.toysrus.es/Educa-Borr%C3%A1s-Los-Vengadores-Puzzle-2x48-Piezas/p/K110879B"
@@ -294,7 +294,7 @@
     "brand": "RAVENSBURGER",
     "category": "puzzle",
     "model": "Disney - Puzzle 2x24 pzs Frozen II",
-    "age": "5",
+    "age": 5,
     "price": "12.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDQwMTM4fGltYWdlL2pwZWd8YURnMUwyZ3lNaTh4TWpVeU9EQXhNVEF4T0RJM01BfDBhYzBiMjA5N2U0MzdkZTIxNTNkODAxZjY3MDViM2Y1MzhlN2E5MGFjNDkyY2VkN2I2OWY4NDIwNDE2ODlkNDU",
     "link": "https://www.toysrus.es/Ravensburger-Disney-Puzzle-2x24-pzs-Frozen-II/p/K1043489"
@@ -304,7 +304,7 @@
     "brand": "RAVENSBURGER",
     "category": "puzzle",
     "model": "Princesas Disney - Pack 2 puzzles 24 piezas",
-    "age": "3",
+    "age": 3,
     "price": "12.99",
     "image": "https://www.toysrus.es/medias/?context=bWFzdGVyfHByb2R1Y3RfaW1hZ2VzfDQwODM5fGltYWdlL2pwZWd8YURVNUwyZzVOeTh4TWpVME16TTVNamczTkRVeU5nfGNiYjhjYjVkMWRlMWFiNmI1YTA4ODdhMDg1NmY1NjVlNTY2YTFkNjhlOWVhNzI5ODM1NzkyM2Y1ZTViZTE4ODE",
     "link": "https://www.toysrus.es/Ravensburger-Princesas-Disney-Pack-2-puzzles-24-piezas/p/K1043486"

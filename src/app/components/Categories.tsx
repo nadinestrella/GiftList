@@ -13,13 +13,17 @@ export const Categories: React.FC<{
   goToNext: () => void;
   goToPrevious: () => void;
 }> = ({ goToNext, goToPrevious }) => {
+  const { updateData, data } = useUser();
   const {
     register,
     handleSubmit,
     formState: { errors },
     watch,
-  } = useForm<IFormInput>();
-  const { updateData } = useUser();
+  } = useForm<IFormInput>({
+    defaultValues: {
+      categories: data.categories,
+    },
+  });
 
   const form = watch();
 

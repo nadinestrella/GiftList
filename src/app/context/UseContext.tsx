@@ -8,7 +8,7 @@ interface Data {
   parentName: string;
   kidName: string;
   kidAge: number;
-  //   categories: { [key: string]: string };
+  categories: string[];
   //   toySelected:
   //   Filters:
 }
