@@ -71,14 +71,7 @@ export default function Home() {
               <Categories goToNext={goToNext} goToPrevious={goToPrevious} />
             ) : null}
             {activeStep === 2 ? (
-              <ListToy
-                goToNext={goToNext}
-                goToPrevious={goToPrevious}
-                // toys={toys as Toy[]}
-                // filters={filters}
-                // toysSelected={toysSelected}
-                // onToysChange={onToysChange}
-              />
+              <ListToy goToNext={goToNext} goToPrevious={goToPrevious} />
             ) : null}
             {activeStep === 3 ? (
               <SelectedToys kidName={kidName} toysSelected={toysSelected} />

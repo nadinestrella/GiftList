@@ -31,7 +31,7 @@ export const ListToy: React.FC<{
   };
 
   const filteredToys = toys
-    .filter((toy) => data?.categories?.includes(toy.category))
+    .filter((toy) => data.categories?.includes(toy.category))
     .filter((toy) => toy.age <= Number(data.kidAge));
 
   // const generateNewToysList = useCallback(() => {
@@ -96,7 +96,7 @@ export const ListToy: React.FC<{
               >
                 <label
                   className={`w-24 h-24 md:w-32 md:h-32 border-2 border-background3 rounded-full overflow-hidden ${
-                    toysSelected.map((toy) => toy.id).includes(toy.id)
+                    filteredToys.map((toy) => toy.id).includes(toy.id)
                       ? 'border-background3 border-8'
                       : 'border-background3'
                   }`}

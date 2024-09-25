@@ -2,7 +2,6 @@ import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useUser } from '../context/UseContext';
 import toys from '../toys.json';
-
 import Image from 'next/image';
 
 interface IFormInput {
