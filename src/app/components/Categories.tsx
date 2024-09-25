@@ -69,7 +69,7 @@ export const Categories: React.FC<{
   return (
     <div className="flex flex-col justify-center content-center gap-3">
       <div className="ml-5 mb-4 md:flex md:flex-col md:items-center">
-        <p className="pb-2">Hi </p>
+        <p className="pb-2">Hi {data.kidName}</p>
         <h3>What do you like to play with? </h3>
         <p>Choose as many options as you like:</p>
       </div>

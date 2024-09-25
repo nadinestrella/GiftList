@@ -21,9 +21,9 @@ export const ListToy: React.FC<{
   } = useForm<IFormInput>();
   const { updateData, data } = useUser();
   const form = watch();
-
-  const [toysList, setToysList] = useState<Toy[]>(toys);
-  const [toysSelected, setToysSelected] = useState<Toy[]>([]);
+  console.log(form);
+  // const [toysList, setToysList] = useState<Toy[]>(toys);
+  // const [toysSelected, setToysSelected] = useState<Toy[]>([]);
 
   const onSubmit: SubmitHandler<IFormInput> = (data: any) => {
     updateData(data);
@@ -33,27 +33,6 @@ export const ListToy: React.FC<{
   const filteredToys = toys
     .filter((toy) => data.categories?.includes(toy.category))
     .filter((toy) => toy.age <= Number(data.kidAge));
-
-    const onToysChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const toyClicked = toys.find(
-          (toy) => toy.id === Number(event.target.value)
-        );
-    
-        const toyClickedChecked = event.target.checked;
-    
-        const currentToys = [...toysSelected];
-    
-        if (toyClickedChecked) {
-          currentToys.push(toyClicked as Toy);
-        } else {
-          const toyClickedIndex = currentToys.findIndex(
-            (toy) => toy.id === (toyClicked as Toy).id
-          );
-    
-          currentToys.splice(toyClickedIndex, 1);
-        }
-
-
 
   // const generateNewToysList = useCallback(() => {
   //   //filtra por cat y edad
@@ -103,7 +82,7 @@ export const ListToy: React.FC<{
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4">
       <div className="md:flex md:flex-col md:items-start">
-        <p className="font-semibold pb-2">kidName,</p>
+        <p className="font-semibold pb-2">{data.kidName}</p>
         <p>These are what we found for you!!</p>
         <p>Select the toys you like the most: </p>
       </div>
@@ -117,13 +96,14 @@ export const ListToy: React.FC<{
               >
                 <label
                   className={`w-24 h-24 md:w-32 md:h-32 border-2 border-background3 rounded-full overflow-hidden ${
-                    filteredToys.map((toy) => toy.id).includes(toy.id)
+                    form.listToy.includes(toy.id.toString())
                       ? 'border-background3 border-8'
                       : 'border-background3'
                   }`}
                 >
                   <input
                     type="checkbox"
+                    id={toy.id.toString()}
                     value={toy.id}
                     // onChange={onToysChange}
                     {...register('listToy', {
