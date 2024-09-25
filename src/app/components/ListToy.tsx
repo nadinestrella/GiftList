@@ -34,6 +34,27 @@ export const ListToy: React.FC<{
     .filter((toy) => data.categories?.includes(toy.category))
     .filter((toy) => toy.age <= Number(data.kidAge));
 
+    const onToysChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const toyClicked = toys.find(
+          (toy) => toy.id === Number(event.target.value)
+        );
+    
+        const toyClickedChecked = event.target.checked;
+    
+        const currentToys = [...toysSelected];
+    
+        if (toyClickedChecked) {
+          currentToys.push(toyClicked as Toy);
+        } else {
+          const toyClickedIndex = currentToys.findIndex(
+            (toy) => toy.id === (toyClicked as Toy).id
+          );
+    
+          currentToys.splice(toyClickedIndex, 1);
+        }
+
+
+
   // const generateNewToysList = useCallback(() => {
   //   //filtra por cat y edad
   //   const filteredToys = toys
