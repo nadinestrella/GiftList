@@ -9,6 +9,7 @@ interface Data {
   kidName: string;
   kidAge: number;
   categories: string[];
+  listToy: string[];
   //   toySelected:
   //   Filters:
 }

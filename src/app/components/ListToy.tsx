@@ -79,12 +79,10 @@ export const ListToy: React.FC<{
                     type="checkbox"
                     id={toy.id.toString()}
                     value={toy.id}
-                    // onChange={onToysChange}
                     {...register('listToy', {
                       required:
                         'Please select at least one toy or click Try again',
                     })}
-                    // checked={toysSelected.map((toy) => toy.id).includes(toy.id)}
                     className="hidden"
                   />
                   <Image
