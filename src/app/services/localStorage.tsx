@@ -1,31 +1,31 @@
-const setInLocalStorage = (key: string, value: any) => {
-  const stringifyData = JSON.stringify(value);
-  localStorage.setItem(key, stringifyData);
-};
+// const setInLocalStorage = (key: string, value: any) => {
+//   const stringifyData = JSON.stringify(value);
+//   localStorage.setItem(key, stringifyData);
+// };
 
-const getFromLocalStorage = (key: string, defaultValue: any) => {
-  const localStorageData = localStorage.getItem(key);
-  if (localStorageData === null) {
-    return defaultValue;
-  } else {
-    return JSON.parse(localStorageData);
-  }
-};
+// const getFromLocalStorage = (key: string, defaultValue: any) => {
+//   const localStorageData = localStorage.getItem(key);
+//   if (localStorageData === null) {
+//     return defaultValue;
+//   } else {
+//     return JSON.parse(localStorageData);
+//   }
+// };
 
-const removeFromLocalStorage = (key: string) => {
-  localStorage.removeItem(key);
-};
+// const removeFromLocalStorage = (key: string) => {
+//   localStorage.removeItem(key);
+// };
 
-const clearFromLocalStorage = () => {
-  localStorage.clear();
-};
+// const clearFromLocalStorage = () => {
+//   localStorage.clear();
+// };
 
-const objectToExport = {
-  setInLocalStorage: setInLocalStorage,
-  getFromLocalStorage: getFromLocalStorage,
-  removeFromLocalStorage: removeFromLocalStorage,
-  clearFromLocalStorage: clearFromLocalStorage,
-};
+// const objectToExport = {
+//   setInLocalStorage: setInLocalStorage,
+//   getFromLocalStorage: getFromLocalStorage,
+//   removeFromLocalStorage: removeFromLocalStorage,
+//   clearFromLocalStorage: clearFromLocalStorage,
+// };
 
-// Exportamos el objeto para que pueda ser usado desde App
-export default objectToExport;
+// // Exportamos el objeto para que pueda ser usado desde App
+// export default objectToExport;

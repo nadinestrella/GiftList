@@ -1,21 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
-import { Toy } from '@/types/toy';
+import { useUser } from '../context/UseContext';
 
-interface SelectedToysProps {
-  kidName: string;
-  toysSelected: Toy[];
-}
+export const SelectedToys: React.FC<{
+  goToNext: () => void;
+  goToPrevious: () => void;
+}> = ({ goToNext, goToPrevious }) => {
+  const { data } = useUser();
 
-export const SelectedToys: React.FC<SelectedToysProps> = ({
-  kidName,
-  toysSelected,
-}) => {
   return (
     <div className="flex flex-col items-center content-center gap-4">
       <div>
-        <p className="font-semibold pb-2">Congratulations {kidName}!! </p>
-        <p> You have choosen these {toysSelected.length} toys!!</p>
+        <p className="font-semibold pb-2">Congratulations {data.kidName}!! </p>
+        <p> You have choosen these NUMERO DE JUGUETES toys!!</p>
       </div>
       <ul className="grid grid-col md:grid-cols-3 justify-center items-center content-center gap-4">
         {toysSelected.map((toy, index) => {
@@ -39,6 +36,10 @@ export const SelectedToys: React.FC<SelectedToysProps> = ({
           );
         })}
       </ul>
+      <div>
+        <button onClick={goToPrevious}>Previous</button>
+        <button onClick={goToNext}>Next </button>
+      </div>
     </div>
   );
 };

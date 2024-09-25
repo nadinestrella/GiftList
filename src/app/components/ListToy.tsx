@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useState } from 'react';
+// import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
-import { Filters, Toy } from '@/types/toy';
+
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useUser } from '../context/UseContext';
 import toys from '../toys.json';
@@ -27,7 +27,7 @@ export const ListToy: React.FC<{
 
   const onSubmit: SubmitHandler<IFormInput> = (data: any) => {
     updateData(data);
-    // goToNext();
+    goToNext();
   };
 
   const filteredToys = toys
@@ -35,13 +35,9 @@ export const ListToy: React.FC<{
     .filter((toy) => toy.age <= Number(data.kidAge));
 
   // const generateNewToysList = useCallback(() => {
-  //   //filtra por cat y edad
-  //   const filteredToys = toys
-  //     .filter((toy) => filters.categories.includes(toy.category))
-  //     .filter((toy) => toy.age <= Number(filters.age));
 
   //   //inicia una nueva lista de juguetes con los ya seleccionados
-  //   const newToysList = [...toysSelected];
+  //   const newToysList = [...filteredToys];
   //   // agrega juguetes adicionales aleatorios
   //   const additionalToys = filteredToys
   //     .filter(
@@ -56,28 +52,6 @@ export const ListToy: React.FC<{
   // useEffect(() => {
   //   generateNewToysList();
   // }, [generateNewToysList]);
-
-  // const onToysChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   const toyClicked = toys.find(
-  //     (toy) => toy.id === Number(event.target.value)
-  //   );
-
-  //   const toyClickedChecked = event.target.checked;
-
-  //   const currentToys = [...toysSelected];
-
-  //   if (toyClickedChecked) {
-  //     currentToys.push(toyClicked as Toy);
-  //   } else {
-  //     const toyClickedIndex = currentToys.findIndex(
-  //       (toy) => toy.id === (toyClicked as Toy).id
-  //     );
-
-  //     currentToys.splice(toyClickedIndex, 1);
-  //   }
-
-  //   setToysSelected(currentToys);
-  // };
 
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4">
@@ -96,7 +70,7 @@ export const ListToy: React.FC<{
               >
                 <label
                   className={`w-24 h-24 md:w-32 md:h-32 border-2 border-background3 rounded-full overflow-hidden ${
-                    form.listToy.includes(toy.id.toString())
+                    form.listToy?.includes(toy.id.toString())
                       ? 'border-background3 border-8'
                       : 'border-background3'
                   }`}
@@ -135,8 +109,8 @@ export const ListToy: React.FC<{
           <button type="submit">Next </button>
         </div>
       </form>
-      {/* <div>
-        <p className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
+      <div>
+        {/* <p className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
           Any match?{' '}
           <button
             onClick={generateNewToysList}
@@ -144,8 +118,8 @@ export const ListToy: React.FC<{
           >
             Try again 🎲
           </button>
-        </p>
-      </div> */}
+        </p> */}
+      </div>
     </div>
   );
 };

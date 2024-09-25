@@ -1,26 +1,17 @@
 import React from 'react';
-import { Toy } from '@/types/toy';
 import Image from 'next/image';
+import { useUser } from '../context/UseContext';
 
-interface FinalListProps {
-  kidName: string;
-  kidAge: number;
-  parentName: string;
-  toysSelected: Toy[];
-}
-
-export const FinalList: React.FC<FinalListProps> = ({
-  kidName,
-  kidAge,
-  parentName,
-  toysSelected,
-}) => {
+export const FinalList: React.FC<{
+  goToPrevious: () => void;
+}> = ({ goToPrevious }) => {
+  const { data } = useUser();
   return (
     <div className="flex flex-col justify-center items-center content-center gap-4">
       <p className="p-1">
-        <strong>{parentName}</strong>, these are the <strong>{kidName}</strong>{' '}
-        selection according to their age:
-        <strong>{kidAge}</strong>.
+        <strong>{data.parentName}</strong>, these are the{' '}
+        <strong>{data.kidName}</strong> selection according to their age:
+        <strong>{data.kidAge}</strong>.
       </p>
       <p className="pb-2 md:pb-4">
         Copy these links to keep this information in a safe place.
@@ -50,6 +41,9 @@ export const FinalList: React.FC<FinalListProps> = ({
           );
         })}
       </ol>
+      <div>
+        <button onClick={goToPrevious}>Previous</button>
+      </div>
       {/* <div className="text-xs">
         <p>Share</p>
         <p>whatapp</p>
