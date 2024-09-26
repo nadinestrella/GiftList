@@ -1,6 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { useUser } from '../context/UseContext';
+import toys from '../toys.json';
+import { PreviousNextBtn } from './ui/NavigationBtn';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 export const FinalList: React.FC<{
   goToPrevious: () => void;
@@ -18,18 +21,22 @@ export const FinalList: React.FC<{
       </p>
 
       <ol>
-        {toysSelected.map((toy, index) => {
+        {(data.listToy || []).map((toyId) => {
+          const toy = toys.find((toy) => toy.id === Number(toyId));
           return (
-            <li key={index} className="text-blue-700 pb-5 flex flex-row gap-4">
+            <li
+              key={toy?.id}
+              className="text-blue-700 pb-5 flex flex-row gap-4"
+            >
               <Image
-                src={toy.image}
+                src={toy?.image}
                 height={100}
                 width={100}
                 alt="toy"
                 className="w-12 h-12 md:w-24 md:h-24 object-cover rounded-full  border-2 border-background3"
               />
               <a
-                href={toy.link}
+                href={toy?.link}
                 target="_blank"
                 className="text-xs md:text-base"
               >
@@ -41,9 +48,7 @@ export const FinalList: React.FC<{
           );
         })}
       </ol>
-      <div>
-        <button onClick={goToPrevious}>Previous</button>
-      </div>
+
       {/* <div className="text-xs">
         <p>Share</p>
         <p>whatapp</p>
@@ -56,6 +61,13 @@ export const FinalList: React.FC<{
           The Gift List {''}
           <span className="animate-heartbeat text-2xl ">❤️</span>
         </p>
+      </div>
+      <div>
+        <PreviousNextBtn
+          type="button"
+          onClick={goToPrevious}
+          icon={faArrowLeft}
+        />
       </div>
     </div>
   );

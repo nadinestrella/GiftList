@@ -6,7 +6,6 @@ import { SelectedToys } from '../components/SelectedToys';
 import { FinalList } from '../components/FinalList';
 // import objectToExport from '../services/localStorage';
 import { StepperUI } from '../components/StepperUI';
-import { StepNavigation } from '../components/ui/LeftStepNavigation';
 import { useSteps } from '@chakra-ui/stepper';
 import { PageLayout } from '../components/PageLayout';
 import { UserProvider } from '../context/UseContext';
@@ -39,13 +38,13 @@ export default function Home() {
           </div>
         </UserProvider>
       }
-      navigation={
-        <StepNavigation
-          step={activeStep}
-          goToNext={goToNext}
-          goToPrevious={goToPrevious}
-        />
-      }
+      // navigation={
+      //   <StepNavigation
+      //     step={activeStep}
+      //     goToNext={goToNext}
+      //     goToPrevious={goToPrevious}
+      //   />
+      // }
     />
   );
 }

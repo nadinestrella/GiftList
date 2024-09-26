@@ -3,6 +3,9 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { useUser } from '../context/UseContext';
 import toys from '../toys.json';
 import Image from 'next/image';
+import { PreviousNextBtn } from './ui/NavigationBtn';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 interface IFormInput {
   categories: string[];
@@ -85,8 +88,14 @@ export const Categories: React.FC<{
           {renderCategories}
         </ul>
         <div>
-          <button onClick={goToPrevious}>Previous</button>
-          <button type="submit">Next </button>
+          <PreviousNextBtn
+            type="button"
+            icon={faArrowLeft}
+            onClick={goToPrevious}
+          />
+          <PreviousNextBtn type="submit" icon={faArrowRight} />
+          {/* <button onClick={goToPrevious}>Previous</button> */}
+          {/* <button type="submit">Next </button> */}
         </div>
       </form>
     </div>

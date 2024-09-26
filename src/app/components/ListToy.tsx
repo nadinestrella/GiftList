@@ -4,6 +4,9 @@ import Image from 'next/image';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useUser } from '../context/UseContext';
 import toys from '../toys.json';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { PreviousNextBtn } from './ui/NavigationBtn';
 
 interface IFormInput {
   listToy: string[];
@@ -103,8 +106,14 @@ export const ListToy: React.FC<{
           })}
         </ul>
         <div>
-          <button onClick={goToPrevious}>Previous</button>
-          <button type="submit">Next </button>
+          <PreviousNextBtn
+            type="button"
+            icon={faArrowLeft}
+            onClick={goToPrevious}
+          />
+          <PreviousNextBtn type="submit" icon={faArrowRight} />
+          {/* <button onClick={goToPrevious}>Previous</button>
+          <button type="submit">Next </button> */}
         </div>
       </form>
       <div>

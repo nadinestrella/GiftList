@@ -2,6 +2,8 @@ import React, { ChangeEvent } from 'react';
 import { InputForm } from './ui/InputForm';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useUser } from '../context/UseContext';
+import { PreviousNextBtn } from './ui/NavigationBtn';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 interface IFormInput {
   parentName: string;
@@ -86,8 +88,9 @@ export const Login: React.FC<{
         >
           {errors.kidAge?.message || ' '}
         </span>
-
-        <button type="submit">Next </button>
+        {/* 
+        <button type="submit">Next </button> */}
+        <PreviousNextBtn type="submit" icon={faArrowRight} />
       </form>
     </div>
   );

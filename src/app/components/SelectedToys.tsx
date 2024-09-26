@@ -2,6 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import { useUser } from '../context/UseContext';
 import toys from '../toys.json';
+import { PreviousNextBtn } from './ui/NavigationBtn';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 export const SelectedToys: React.FC<{
   goToNext: () => void;
@@ -40,8 +43,14 @@ export const SelectedToys: React.FC<{
         })}
       </ul>
       <div>
-        <button onClick={goToPrevious}>Previous</button>
-        <button onClick={goToNext}>Next </button>
+        <PreviousNextBtn
+          type="button"
+          icon={faArrowLeft}
+          onClick={goToPrevious}
+        />
+        <PreviousNextBtn type="button" icon={faArrowRight} onClick={goToNext} />
+        {/* <button onClick={goToPrevious}>Previous</button>
+        <button onClick={goToNext}>Next </button> */}
       </div>
     </div>
   );
