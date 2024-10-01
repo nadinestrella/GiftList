@@ -42,15 +42,13 @@ export const SelectedToys: React.FC<{
           );
         })}
       </ul>
-      <div>
+      <div className='"flex flex-row justify-around align-middle my-5"'>
         <PreviousNextBtn
           type="button"
           icon={faArrowLeft}
           onClick={goToPrevious}
         />
         <PreviousNextBtn type="button" icon={faArrowRight} onClick={goToNext} />
-        {/* <button onClick={goToPrevious}>Previous</button>
-        <button onClick={goToNext}>Next </button> */}
       </div>
     </div>
   );

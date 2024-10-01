@@ -88,9 +88,9 @@ export const Login: React.FC<{
         >
           {errors.kidAge?.message || ' '}
         </span>
-        {/* 
-        <button type="submit">Next </button> */}
-        <PreviousNextBtn type="submit" icon={faArrowRight} />
+        <div className="text-end">
+          <PreviousNextBtn type="submit" icon={faArrowRight} />
+        </div>
       </form>
     </div>
   );

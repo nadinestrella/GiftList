@@ -87,15 +87,13 @@ export const Categories: React.FC<{
         <ul className="grid grid-cols-2 md:grid-cols-3 gap-8 justify-items-center md:ml-9 ">
           {renderCategories}
         </ul>
-        <div>
+        <div className="flex flex-row justify-around align-middle my-5">
           <PreviousNextBtn
             type="button"
             icon={faArrowLeft}
             onClick={goToPrevious}
           />
           <PreviousNextBtn type="submit" icon={faArrowRight} />
-          {/* <button onClick={goToPrevious}>Previous</button> */}
-          {/* <button type="submit">Next </button> */}
         </div>
       </form>
     </div>

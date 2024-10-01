@@ -105,7 +105,7 @@ export const ListToy: React.FC<{
             );
           })}
         </ul>
-        <div>
+        <div className="flex flex-row justify-around align-middle my-5">
           <PreviousNextBtn
             type="button"
             icon={faArrowLeft}
