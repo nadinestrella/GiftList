@@ -18,11 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-import {
-  ChakraBaseProvider,
-  extendBaseTheme,
-  theme as chakraTheme,
-} from '@chakra-ui/react';
+import { extendBaseTheme, theme as chakraTheme } from '@chakra-ui/react';
 
 const { Button } = chakraTheme.components;
 

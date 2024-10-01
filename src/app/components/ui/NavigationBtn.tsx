@@ -18,10 +18,11 @@ export const PreviousNextBtn: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`hover:text-red-600 ${className}`} // Añadir clases personalizadas
+      className={`hover:text-red-600 text-2xl p-5 ${className}`}
       onClick={onClick} // Acción cuando se hace clic
       aria-label={ariaLabel} // Accesibilidad
       type={type}
+      // className="`hover:text-red-600"
     >
       <FontAwesomeIcon icon={icon} />
     </button>
