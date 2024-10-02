@@ -1,6 +1,5 @@
 // import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
-
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useUser } from '../context/UseContext';
 import toys from '../toys.json';
@@ -116,6 +115,13 @@ export const ListToy: React.FC<{
           <button type="submit">Next </button> */}
         </div>
       </form>
+      <span
+        className={`text-red-600 text-xs lg:text-right ${
+          errors.listToy ? 'visible' : 'invisible'
+        }`}
+      >
+        {errors.listToy?.message || ' '}
+      </span>
       <div>
         {/* <p className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
           Any match?{' '}
